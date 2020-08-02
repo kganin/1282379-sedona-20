@@ -2,18 +2,14 @@
 @import "mixin";
 
 .service {
-
   @include reset-list;
   background-color: $white;
-
 
   &__title {
     @include reset;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-
-
   }
 
   &__text {
@@ -21,10 +17,5 @@
     font-size: 14px;
     line-height: 21px;
     color: $grey;
-
-
-
   }
-
-
 }

@@ -1,8 +1,9 @@
+//global
 @import "variables";
 @import "fonts";
 @import "global";
-
-@import 'libs/normalize';
-
+// libs
+@import "libs/normalize";
+//blocks, components
 @import "components/all";
 @import "blocks/all";

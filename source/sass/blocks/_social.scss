@@ -2,7 +2,6 @@
 @import "mixin";
 
 .social {
-
   @include reset-list;
 
   display: flex;
@@ -24,18 +23,14 @@
 
     &--twitter {
       background-image: url("/img/icon-twitter.svg");
-
     }
 
     &--facebook {
       background-image: url("/img/icon-youtube.svg");
-
     }
 
     &--youtube {
       background-image: url("/img/icon-facebook.svg");
-
     }
-
   }
 }

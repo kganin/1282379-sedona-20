@@ -16,30 +16,27 @@
   }
 
   &__title {
-        @include reset;
+    @include reset;
     margin-bottom: 40px;
 
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-
-
   }
 
   &__text {
-
     @include reset;
     margin-bottom: 30px;
 
     font-size: 14px;
     line-height: 21px;
     color: $grey;
-
   }
 
   &__hotel-search {
     padding-top: 30px;
     padding-bottom: 50px;
+
     h2 {
       color: red;
     }
