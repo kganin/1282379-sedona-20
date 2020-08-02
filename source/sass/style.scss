@@ -1,1 +1,8 @@
-// Начните писать стили здесь
+@import "variables";
+@import "fonts";
+@import "global";
+
+@import 'libs/normalize';
+
+@import "components/all";
+@import "blocks/all";

@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixin";
+
+.footer {
+  &__hashtag {
+    @include reset;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__copyright {
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      // margin-left: -10px;
+    }
+  }
+}

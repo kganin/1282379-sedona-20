@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixin";
+
+.features {
+  // $self: &;
+
+  @include reset-list;
+
+  &__text-wrapper {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &--grey {
+    background-color: $light-grey;
+  }
+
+}

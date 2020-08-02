@@ -1,0 +1,47 @@
+@import "variables";
+@import "mixin";
+
+.main {
+  &__page-intro {
+    margin-bottom: 30px;
+    padding-top: 90px;
+    padding-bottom: 85px;
+
+    text-align: center;
+
+    background-color: $blue;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__title {
+        @include reset;
+    margin-bottom: 40px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+
+
+  }
+
+  &__text {
+
+    @include reset;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+
+  }
+
+  &__hotel-search {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    h2 {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixin";
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 32px;
+
+  font: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  vertical-align: middle;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $blue;
+  border: none;
+  cursor: pointer;
+}
