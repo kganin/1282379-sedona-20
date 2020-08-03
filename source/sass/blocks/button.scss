@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixin";
-
 .button {
   display: inline-block;
   box-sizing: border-box;
@@ -11,10 +8,10 @@
   font-size: 21px;
   line-height: 26px;
   vertical-align: middle;
-  color: $white;
+  color: $text-white;
   text-transform: uppercase;
 
-  background-color: $blue;
+  background-color: $main-blue;
   border: none;
   cursor: pointer;
 }

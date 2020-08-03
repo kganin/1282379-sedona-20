@@ -1,9 +1,24 @@
 //global
+
 @import "variables";
 @import "fonts";
 @import "global";
-// libs
+@import "mixin";
+@import "blocks/button";
+
+//libs
+
 @import "libs/normalize";
+
 //blocks, components
-@import "components/all";
-@import "blocks/all";
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/heading";
+@import "blocks/features";
+@import "blocks/service";
+@import "blocks/social";
+@import "blocks/gallery";
+@import "blocks/feedback-modal";
+@import "blocks/footer";

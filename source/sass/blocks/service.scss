@@ -1,0 +1,18 @@
+.service {
+  @include reset-list;
+  background-color: $text-white;
+}
+
+.service__title {
+  @include reset;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.service__text {
+  @include reset;
+  font-size: 14px;
+  line-height: 21px;
+  color: $text-grey;
+}
