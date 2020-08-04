@@ -15,19 +15,19 @@
 
   vertical-align: middle;
 
-  background-color: $main-blue;
+  background-color: $main-color;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   &--twitter {
-    background-image: url("/img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
 
   &--facebook {
-    background-image: url("/img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }
 
   &--youtube {
-    background-image: url("/img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
 }
