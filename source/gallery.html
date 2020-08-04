@@ -3,75 +3,95 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Фотогалерея</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="header">
-    <a class="logo header__logo"><img src="#" alt="Логотип штата Седона"></a>
-    <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="menu-list nav__list">
-        <li class="menu-list__item"><a class="menu-list__link menu-list__link--active" href="">Главная</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">Фото и видео</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">Форма отзыва</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">HTML Academy</a></li>
+    <a class="header__logo"><img src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Логотип штата Седона"></a>
+    <nav class="header__nav">
+      <button class="header__toggle" type="button"><span class="hidden">Открыть меню</span></button>
+      <ul class="header__nav-list">
+        <li><a class="header__link" href="index.html">Главная</a></li>
+        <li><a class="header__link header__link--active">Фото и видео</a></li>
+        <li><a class="header__link" href="feedback.html">Форма отзыва</a></li>
+        <li><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <div class="page-intro">
-      <img src="#" alt="Welcome to Sedona" class="page-intro__content">
-    </div>
     <section class="heading">
-      <h1 class="heading__title">Фото и видео</h1>
-      <p class="heading__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <div class="heading__creative-wrapper">
+        <img src="img/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+      </div>
+      <div class="heading__text-content">
+        <h1 class="heading__title">Фото и видео</h1>
+        <p class="heading__text">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
+      </div>
     </section>
     <section class="gallery">
       <h2 class="hidden">Галерея фотоснимков</h2>
-      <ul class="gallery__list">
-        <li class="gallery__item card">
-          <figure class="card__box">
-            <img src="#" alt="" class="card__content" height="280" width="280">
-            <figcaption class="card__text">Неродные просторы</figcaption>
-          </figure>
-          <p class="card__owner">Автор фото: Борис</p>
-          <button class="card__like-button"><span class="hidden">Поставить лайк</span></button>
-          <span class="card__like-count">1350</span>
-        </li>
-        <li class="gallery__item card">
-          <figure class="card__box">
-            <img src="#" alt="" class="card__content" height="280" width="280">
-            <figcaption class="card__text">Местная растительность</figcaption>
-          </figure>
-          <p class="card__owner">Автор фото: Сергей</p>
-          <button class="card__like-button"><span class="hidden">Поставить лайк</span></button>
-          <span class="card__like-count">143</span>
-        </li>
-        <li class="gallery__item card">
-          <figure class="card__box">
-            <img src="#" alt="" class="card__content" height="280" width="280">
-            <figcaption class="card__text">Дорога на север</figcaption>
-          </figure>
-          <p class="card__owner">Автор фото: Петр</p>
-          <button class="card__like-button"><span class="hidden">Поставить лайк</span></button>
-          <span class="card__like-count">96</span>
-        </li>
-        <li class="gallery__item card">
-          <figure class="card__box card">
-            <img src="#" alt="" class="card__content" height="280" width="280">
-            <figcaption class="card__text">Мост дьявола</figcaption>
-          </figure>
-          <p class="card__owner">Автор фото: Антон</p>
-          <button class="card__like-button"><span class="hidden">Поставить лайк</span></button>
-          <span class="card__like-count"></span>
-        </li>
-      </ul>
+      <article class="gallery__item">
+        <h3 class="hidden">Фото</h3>
+        <figure class="gallery__item-box">
+          <img src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" height="280" width="280">
+          <figcaption class="gallery__text">Неродные просторы</figcaption>
+        </figure>
+        <p class="gallery__owner">Автор фото: Борис</p>
+        <button class="gallery__like-button"><span class="hidden">Поставить лайк</span></button>
+        <span class="gallery__like-count">1350</span>
+      </article>
+      <article class="gallery__item">
+        <h3 class="hidden">Фото</h3>
+        <figure class="gallery__item-box">
+          <img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" height="280" width="280">
+          <figcaption class="gallery__text">Местная растительность</figcaption>
+        </figure>
+        <p class="gallery__owner">Автор фото: Сергей</p>
+        <button class="gallery__like-button"><span class="hidden">Поставить лайк</span></button>
+        <span class="gallery__like-count">143</span>
+      </article>
+      <article class="gallery__item">
+        <h3 class="hidden">Фото</h3>
+        <figure class="gallery__item-box">
+          <img src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" height="280" width="280">
+          <figcaption class="gallery__text">Дорога на север</figcaption>
+        </figure>
+        <p class="gallery__owner">Автор фото: Петр</p>
+        <button class="gallery__like-button"><span class="hidden">Поставить лайк</span></button>
+        <span class="gallery__like-count">96</span>
+      </article>
+      <article class="gallery__item">
+        <h3 class="hidden">Фото</h3>
+        <figure class="gallery__item-box gallery">
+          <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" height="280" width="280">
+          <figcaption class="gallery__text">Мост дьявола</figcaption>
+        </figure>
+        <p class="gallery__owner">Автор фото: Антон</p>
+        <button class="gallery__like-button"><span class="hidden">Поставить лайк</span></button>
+        <span class="gallery__like-count">254</span>
+      </article>
     </section>
-    <section class="demo">
-      <h2 class="demo__title">Все еще сомневаетесь?</h2>
-      <p class="demo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <div class="demo__box"></div>
+    <section class="main__demo">
+      <h2 class="main__title">Все еще сомневаетесь?</h2>
+      <p class="main__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <article class="video">
+        <h3 class="hidden">Видео-презентация</h3>
+        <img src="img/video-mobile@1x.jpg" alt="Видеопрезентация" width="320" height="201">
+        <div class="video__controls controls">
+          <div class="controls__panel ">
+            <div class="controls__progress-bar"></div>
+            <button class="controls__control" type="button"></button>
+          </div>
+          <div class="controls__buttons">
+            <button class="controls__button controls__button--repeat" type="button"><span class="hidden">Повторить заного</span></button>
+            <button class="controls__button controls__button__subs" type="button"><span class="hidden">Включить субтитры</span></button>
+            <button class="controls__button controls__button--fullscreen" type="button"><span class="hidden">Развернуть на полный экран</span></button>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
   <footer class="footer">
@@ -81,10 +101,10 @@
       <li><a href="" class="social__link social__link--facebook"><span class="hidden">Мы в facebook</span></a></li>
       <li><a href="" class="social__link social__link--youtube"><span class="hidden">Мы на YouTube</span></a></li>
     </ul>
-    <div class="copyright footer__copyright">
-      <p class="copyright__text">Разработано</p>
-      <img src="#" alt="Логотип HTML Academy" class="copyright__logo">
-    </div>
+    <p class="footer__copyright">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
+    </p>
   </footer>
 </body>
 

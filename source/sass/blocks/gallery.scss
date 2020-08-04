@@ -1,0 +1,20 @@
+.gallery__item-box {
+  @include reset;
+}
+
+.gallery__like-count {
+  @include reset;
+}
+
+.gallery__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__owner {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-extra;
+  text-transform: none;
+}

@@ -1,0 +1,12 @@
+.features {
+  @include reset-list;
+
+  &--grey-bg {
+    background-color: $features-bg;
+  }
+}
+
+.features__text-wrapper {
+  background-color: $main-color;
+  color: $text-secondary;
+}
