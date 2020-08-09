@@ -9,29 +9,29 @@
 </head>
 
 <body class="page">
-  <header class="header">
-    <a class="header__logo"><img src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Логотип штата Седона"></a>
+  <header class="header container">
+    <a class="header__logo"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип штата Седона"></a>
     <nav class="header__nav">
       <button class="header__toggle" type="button"><span class="hidden">Открыть меню</span></button>
       <ul class="header__nav-list">
-        <li><a class="header__link" href="index.html">Главная</a></li>
-        <li><a class="header__link header__link--active">Фото и видео</a></li>
-        <li><a class="header__link" href="feedback.html">Форма отзыва</a></li>
-        <li><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        <li class="header__nav-item"><a class="header__link" href="index.html">Главная</a></li>
+        <li class="header__nav-item"><a class="header__link header__link--active">Фото и видео</a></li>
+        <li class="header__nav-item"><a class="header__link" href="feedback.html">Форма отзыва</a></li>
+        <li class="header__nav-item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <section class="heading">
+    <section class="heading heading--gallery container">
       <div class="heading__creative-wrapper">
-        <img src="img/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+        <img class="heading__creative" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону">
       </div>
-      <div class="heading__text-content">
+      <div class="heading__text-wrapper">
         <h1 class="heading__title">Фото и видео</h1>
-        <p class="heading__text">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
+        <p class="heading__reasons">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery container">
       <h2 class="hidden">Галерея фотоснимков</h2>
       <article class="gallery__item">
         <h3 class="hidden">Фото</h3>
@@ -74,10 +74,12 @@
         <span class="gallery__like-count">254</span>
       </article>
     </section>
-    <section class="main__demo">
-      <h2 class="main__title">Все еще сомневаетесь?</h2>
-      <p class="main__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <article class="video">
+    <section class="video container">
+      <div class="video__text-wrapper">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+      <article class="video__content">
         <h3 class="hidden">Видео-презентация</h3>
         <img src="img/video-mobile@1x.jpg" alt="Видеопрезентация" width="320" height="201">
         <div class="video__controls controls">

@@ -1,12 +1,51 @@
 .features {
   @include reset-list;
+  text-align: center;
 
-  &--grey-bg {
+  &--grey {
     background-color: $features-bg;
   }
+
+  &--blue {
+    background-color: $main-color;
+  }
+
+  &--triangle {
+    padding-top: 14px;
+  }
+
+  // &--reverse {}
 }
 
 .features__text-wrapper {
-  background-color: $main-color;
   color: $text-secondary;
+  padding: 40px 10px 36px 10px;
+}
+
+.features__title {
+  @include reset;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.features__number {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 13px;
+}
+
+.features__text {
+  @include reset;
+  line-height: 21px;
+}
+
+.features__creative {
+  width: 100%;
+  object-fit: cover;
+}
+
+.features__item {
+  padding: 26px 10px;
 }

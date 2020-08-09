@@ -1,0 +1,21 @@
+// .video {
+
+// }
+
+.video__text-wrapper {
+  text-align: center;
+  padding: 32px 10px;
+}
+
+.video__title {
+  @include reset;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.video__text {
+  @include reset;
+  line-height: 24px;
+}

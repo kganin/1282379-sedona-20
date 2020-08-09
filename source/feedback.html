@@ -9,128 +9,128 @@
 </head>
 
 <body class="page">
-  <header class="header">
-    <a class="header__logo"><img src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Логотип штата Седона"></a>
+  <header class="header container">
+    <a class="header__logo"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип штата Седона"></a>
     <nav class="header__nav">
       <button class="header__toggle" type="button"><span class="hidden">Открыть меню</span></button>
       <ul class="header__nav-list">
-        <li><a class="header__link" href="index.html">Главная</a></li>
-        <li><a class="header__link" href="gallery.html">Фото и видео</a></li>
-        <li><a class="header__link header__link--active">Форма отзыва</a></li>
-        <li><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        <li class="header__nav-item"><a class="header__link" href="index.html">Главная</a></li>
+        <li class="header__nav-item"><a class="header__link" href="gallery.html">Фото и видео</a></li>
+        <li class="header__nav-item"><a class="header__link header__link--active">Форма отзыва</a></li>
+        <li class="header__nav-item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
+            Academy</a></li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <section class="heading">
+    <section class="heading heading--feedback container">
       <div class="heading__creative-wrapper">
-        <img src="img/text-sedona.svg" width="230" height="40" alt="Штат Седона">
+        <img class="heading__creative" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону">
       </div>
-      <div class="heading__text-content">
+      <div class="heading__text-wrapper">
         <h1 class="heading__title">Оставьте свой отзыв</h1>
-        <p class="heading__text">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+        <p class="heading__reasons">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также
+          о&nbsp;посещенных вами достопримечательностях</p>
       </div>
     </section>
-    <form class="feedback-modal" action="https://echo.htmlacademy.ru/courses" method="post">
-      <fieldset class="feedback-modal__user-id">
-        <legend class="feedback-modal__title">Представьтесь</legend>
-        <ul class="feedback-modal__list">
-          <li>
-            <label class="feedback-modal__label">
-              Имя<sup>*</sup>:
-              <input type="text" class="feedback-modal__input" name="name" placeholder="Петр">
-            </label>
+    <form class="modal container" action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="modal__fieldset">
+        <h3 class="modal__title">Представьтесь</h3>
+        <ul class="modal__list">
+          <li class="modal__list-item">
+            <label class="modal__caption" for="name">Имя<sup>*</sup>:</label>
+            <input class="modal__input" id="name" type="text" name="name" placeholder="Петр">
           </li>
-          <li>
-            <label class="feedback-modal__label">
-              Фамилия<sup>*</sup>:
-              <input type="text" class="feedback-modal__input" name="surname" placeholder="Иванов">
-            </label>
+          <li class="modal__list-item">
+            <label class="modal__caption" for="surname">Фамилия<sup>*</sup>:</label>
+            <input id="surname" class="modal__input" type="text" name="surname" placeholder="Иванов">
           </li>
-          <li>
-            <label class="feedback-modal__label">
-              Отчество:
-              <input type="text" class="feedback-modal__input" name="middle-name" placeholder="Александрович">
-            </label>
+          <li class="modal__list-item">
+            <label class="modal__caption" for="middle-name">Отчество:</label>
+            <input class="modal__input" id="middle-name" type="text" name="middle-name" placeholder="Александрович">
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback-modal__user-contacts">
-        <legend class="feedback-modal__title">Контактная информация:</legend>
-        <ul class="feedback-modal__list">
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              Контактный телефон<sup>*</sup>:
-              <input type="text" class="text-field feedback-modal__input" name="phone-number" placeholder="Введите телефон">
-            </label>
+      </div>
+      <div class="modal__fieldset">
+        <h3 class="modal__title">Контактная информация:</h3>
+        <ul class="modal__list">
+          <li class="modal__list-item modal__list-item--column">
+            <label class="modal__caption modal__caption--contacts" for="phone-number">Контактный
+              телефон<sup>*</sup>:</label>
+            <input class="modal__input modal__input--contacts" id="phone-number" type="text" name="phone-number" placeholder="Введите телефон">
           </li>
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              Электронная почта<sup>*</sup>:
-              <input type="text" class="feedback-modal__input" name="email" placeholder="Введите e-mail">
-            </label>
+          <li class="modal__list-item modal__list-item--column">
+            <label class="modal__caption modal__caption--contacts" for="email">Электронная почта<sup>*</sup>:</label>
+            <input class="modal__input modal__input--contacts" id="email" type="text" name="email" placeholder="Введите e-mail">
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback-modal__review">
-        <legend class="feedback-modal__title">Ваше общее впечатление:</legend>
-        <ul class="feedback-modal__list">
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="radio" name="feedback-modal" value="good" class="feedback-modal__radio" checked>
+      </div>
+      <div class="modal__fieldset">
+        <h3 class="modal__title modal__title--option">Ваше общее впечатление:</h3>
+        <ul class="modal__list">
+          <li class="modal__list-item modal__list-item--radio">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="radio" name="review" value="good" checked>
+              <span class="modal__radio-icon"></span>
               Скорее положительное
             </label>
           </li>
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="radio" name="feedback-modal" value="bad" class="feedback-modal__radio">
+          <li class="modal__list-item modal__list-item--radio">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="radio" name="review" value="bad">
+              <span class="modal__radio-icon"></span>
               Скорее отрицательное
             </label>
           </li>
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="radio" name="feedback-modal" value="not-sure" class="feedback-modal__radio">
+          <li class="modal__list-item modal__list-item--radio">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="radio" name="review" value="not-sure">
+              <span class="modal__radio-icon"></span>
               Затрудняюсь ответить
             </label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback-modal__visited-places">
-        <legend class="feedback-modal__title">Ваше общее впечатление:</legend>
-        <ul class="feedback-modal__list">
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="checkbox" name="devil's bridge" class="feedback-modal__input" checked>
+      </div>
+      <div class="modal__fieldset">
+        <h3 class="modal__title modal__title--option">Посещенные достопримечательности:</h3>
+        <ul class="modal__list">
+          <li class="_modal__list-item modal__list-item--checkbox">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="checkbox" name="devils-bridge" checked>
+              <span class="modal__checkbox-icon"></span>
               Мост дьявола
             </label>
           </li>
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="checkbox" name="mt ring" class="feedback-modal__input" checked>
-              Гора колокол
+          <li class="_modal__list-item modal__list-item--checkbox">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="checkbox" name="mt-ring" checked>
+              <span class="modal__checkbox-icon"></span>
+              Гора-Колокол
             </label>
           </li>
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="checkbox" name="slide-park" class="feedback-modal__input" checked>
+          <li class="_modal__list-item modal__list-item--checkbox">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="checkbox" name="slide-park" checked>
+              <span class="modal__checkbox-icon"></span>
               Слайд-парк
             </label>
           </li>
-          <li class="feedback-modal__item">
-            <label class="feedback-modal__label">
-              <input type="checkbox" name="red rocks" class="feedback-modal__input">
+          <li class="_modal__list-item modal__list-item--checkbox">
+            <label class="modal__caption modal__caption--option">
+              <input class="modal__input--hidden" type="checkbox" name="red-rocks">
+              <span class="modal__checkbox-icon"></span>
               Красные скалы
             </label>
           </li>
         </ul>
-      </fieldset>
-      <div class="feedback-modal__impressions">
-        <label class="feedback-modal__title">
-          Опишите свои эмоции:
-          <textarea class="feedback-modal__text-area" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <div class="modal__fieldset modal__fieldset--text-area">
+        <label class="modal__caption">
+          <span class="modal__title modal__title--text-area">Опишите свои эмоции:</span>
+          <textarea class="modal__input modal__input--text-area" placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
       </div>
-      <button type="submit" class="button feedback-modal__button">ОТПРАВИТЬ ОТЗЫВ</button>
+      <button type="submit" class="button modal__button">Отправить отзыв</button>
     </form>
   </main>
   <footer class="footer">

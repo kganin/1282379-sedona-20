@@ -2,9 +2,10 @@
   @include reset-list;
 
   display: flex;
+  justify-content: center;
 
-  li {
-    margin-right: 6px;
+  li:not(:last-child) {
+    margin-right: 3px;
   }
 }
 

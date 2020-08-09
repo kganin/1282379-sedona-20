@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 
   font-size: 14px;
@@ -30,4 +34,10 @@ a {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
 }

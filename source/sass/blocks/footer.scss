@@ -4,12 +4,22 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 40px 10px 32px 10px;
+}
+
+.footer__social {
+  margin-bottom: 41px;
 }
 
 .footer__copyright {
+  @include reset;
+  text-align: center;
+
   img {
     display: inline-block;
     vertical-align: middle;
     // margin-left: -10px;
+    margin-left: 8px;
   }
 }

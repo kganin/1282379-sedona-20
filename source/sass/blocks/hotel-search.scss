@@ -1,0 +1,15 @@
+.hotel-search {
+  padding: 33px 10px 49px 10px;
+  text-align: center;
+}
+
+.hotel-search__title {
+  @include reset;
+  margin-bottom: 22px;
+}
+
+.hotel-search__text {
+  @include reset;
+  line-height: 24px;
+  margin-bottom: 28px;
+}

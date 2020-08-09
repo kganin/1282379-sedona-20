@@ -1,5 +1,19 @@
+.gallery__item {
+  padding: 22px 20px 14px 20px;
+  position: relative;
+
+  img {
+    width: 100%;
+    margin: 0 auto;
+
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+}
+
 .gallery__item-box {
   @include reset;
+  margin-bottom: 2px;
 }
 
 .gallery__like-count {
@@ -7,14 +21,30 @@
 }
 
 .gallery__text {
+  @include reset;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
 }
 
 .gallery__owner {
+  @include reset;
   font-size: 14px;
   line-height: 24px;
   color: $text-extra;
   text-transform: none;
+  margin-bottom: 10px;
+}
+
+.gallery__like-button {
+  width: 23px;
+  height: 21px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
