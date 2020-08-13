@@ -15,7 +15,7 @@
       <button class="header__toggle" type="button"><span class="hidden">Открыть меню</span></button>
       <ul class="header__nav-list">
         <li class="header__nav-item"><a class="header__link" href="index.html">Главная</a></li>
-        <li class="header__nav-item"><a class="header__link" href="gallery.html">Фото и видео</a></li>
+        <li class="header__nav-item"><a class="header__link" href="photo.html">Фото и видео</a></li>
         <li class="header__nav-item"><a class="header__link header__link--active">Форма отзыва</a></li>
         <li class="header__nav-item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
             Academy</a></li>
@@ -23,19 +23,19 @@
     </nav>
   </header>
   <main class="main">
-    <section class="heading heading--feedback container">
-      <div class="heading__creative-wrapper">
+    <section class="heading heading--modal container">
+      <div class="heading__creative-wrapper heading__creative-wrapper--modal">
         <img class="heading__creative" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону">
       </div>
-      <div class="heading__text-wrapper">
-        <h1 class="heading__title">Оставьте свой отзыв</h1>
-        <p class="heading__reasons">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также
+      <div class="heading__text-wrapper heading__text-wrapper--modal">
+        <h1 class="heading__title heading__title--modal">Оставьте свой отзыв</h1>
+        <p class="heading__reasons heading__reasons--modal">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также
           о&nbsp;посещенных вами достопримечательностях</p>
       </div>
     </section>
     <form class="modal container" action="https://echo.htmlacademy.ru/courses" method="post">
-      <div class="modal__fieldset">
-        <h3 class="modal__title">Представьтесь</h3>
+      <div class="modal__fieldset modal__fieldset--user-id">
+        <h3 class="modal__title modal__title--user-id">Представьтесь</h3>
         <ul class="modal__list">
           <li class="modal__list-item">
             <label class="modal__caption" for="name">Имя<sup>*</sup>:</label>
@@ -51,39 +51,39 @@
           </li>
         </ul>
       </div>
-      <div class="modal__fieldset">
-        <h3 class="modal__title">Контактная информация:</h3>
+      <div class="modal__fieldset modal__fieldset--contacts">
+        <h3 class="modal__title modal__title--contacts">Контактная информация:</h3>
         <ul class="modal__list">
-          <li class="modal__list-item modal__list-item--column">
+          <li class="modal__list-item modal__list-item--contacts">
             <label class="modal__caption modal__caption--contacts" for="phone-number">Контактный
               телефон<sup>*</sup>:</label>
             <input class="modal__input modal__input--contacts" id="phone-number" type="text" name="phone-number" placeholder="Введите телефон">
           </li>
-          <li class="modal__list-item modal__list-item--column">
+          <li class="modal__list-item modal__list-item--contacts">
             <label class="modal__caption modal__caption--contacts" for="email">Электронная почта<sup>*</sup>:</label>
             <input class="modal__input modal__input--contacts" id="email" type="text" name="email" placeholder="Введите e-mail">
           </li>
         </ul>
       </div>
-      <div class="modal__fieldset">
-        <h3 class="modal__title modal__title--option">Ваше общее впечатление:</h3>
+      <div class="modal__fieldset modal__fieldset--review">
+        <h3 class="modal__title modal__title--review">Ваше общее впечатление:</h3>
         <ul class="modal__list">
-          <li class="modal__list-item modal__list-item--radio">
-            <label class="modal__caption modal__caption--option">
+          <li class="modal__list-item modal__list-item--review">
+            <label class="modal__caption modal__caption--review">
               <input class="modal__input--hidden" type="radio" name="review" value="good" checked>
               <span class="modal__radio-icon"></span>
               Скорее положительное
             </label>
           </li>
-          <li class="modal__list-item modal__list-item--radio">
-            <label class="modal__caption modal__caption--option">
-              <input class="modal__input--hidden" type="radio" name="review" value="bad">
+          <li class="modal__list-item modal__list-item--review">
+            <label class="modal__caption modal__caption--review">
+              <input class="modal__input--hidden" type="radio" name="review" value="bad"> <!-- можно так писать классы? не должно ли обязательно быть modal__input modal__input--hidden? -->
               <span class="modal__radio-icon"></span>
               Скорее отрицательное
             </label>
           </li>
-          <li class="modal__list-item modal__list-item--radio">
-            <label class="modal__caption modal__caption--option">
+          <li class="modal__list-item modal__list-item--review">
+            <label class="modal__caption modal__caption--review">
               <input class="modal__input--hidden" type="radio" name="review" value="not-sure">
               <span class="modal__radio-icon"></span>
               Затрудняюсь ответить
@@ -91,32 +91,32 @@
           </li>
         </ul>
       </div>
-      <div class="modal__fieldset">
-        <h3 class="modal__title modal__title--option">Посещенные достопримечательности:</h3>
-        <ul class="modal__list">
-          <li class="_modal__list-item modal__list-item--checkbox">
-            <label class="modal__caption modal__caption--option">
+      <div class="modal__fieldset modal__fieldset--seen-places">
+        <h3 class="modal__title modal__title--seen-places">Посещенные <br> достопримечательности:</h3>
+        <ul class="modal__list modal-list--seen-places">
+          <li class="modal__list-item modal__list-item--seen-places">
+            <label class="modal__caption modal__caption--seen-places">
               <input class="modal__input--hidden" type="checkbox" name="devils-bridge" checked>
               <span class="modal__checkbox-icon"></span>
-              Мост дьявола
+              Мост Дьявола
             </label>
           </li>
-          <li class="_modal__list-item modal__list-item--checkbox">
-            <label class="modal__caption modal__caption--option">
+          <li class="modal__list-item modal__list-item--seen-places">
+            <label class="modal__caption modal__caption--seen-places">
               <input class="modal__input--hidden" type="checkbox" name="mt-ring" checked>
               <span class="modal__checkbox-icon"></span>
               Гора-Колокол
             </label>
           </li>
-          <li class="_modal__list-item modal__list-item--checkbox">
-            <label class="modal__caption modal__caption--option">
+          <li class="modal__list-item modal__list-item--seen-places">
+            <label class="modal__caption modal__caption--seen-places">
               <input class="modal__input--hidden" type="checkbox" name="slide-park" checked>
               <span class="modal__checkbox-icon"></span>
               Слайд-парк
             </label>
           </li>
-          <li class="_modal__list-item modal__list-item--checkbox">
-            <label class="modal__caption modal__caption--option">
+          <li class="modal__list-item modal__list-item--seen-places">
+            <label class="modal__caption modal__caption--seen-places">
               <input class="modal__input--hidden" type="checkbox" name="red-rocks">
               <span class="modal__checkbox-icon"></span>
               Красные скалы
@@ -131,18 +131,19 @@
         </label>
       </div>
       <button type="submit" class="button modal__button">Отправить отзыв</button>
+      <span class="modal__note">* — обязательные поля</span>
     </form>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="social footer__social">
       <li><a href="" class="social__link social__link--twitter"><span class="hidden">Мы в twitter</span></a></li>
-      <li><a href="" class="social__link social__link--facebook"><span class="hidden">Мы в facebook</span></a></li>
-      <li><a href="" class="social__link social__link--youtube"><span class="hidden">Мы на YouTube</span></a></li>
+      <li><a href="" class="social__link social__link--youtube"><span class="hidden">Мы в facebook</span></a></li>
+      <li><a href="" class="social__link social__link--facebook"><span class="hidden">Мы на YouTube</span></a></li>
     </ul>
     <p class="footer__copyright">
       Разработано
-      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
+      <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
     </p>
   </footer>
 </body>

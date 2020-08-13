@@ -12,10 +12,32 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .video__text {
   @include reset;
   line-height: 24px;
+}
+
+.video__content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  img {
+    margin: auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .video__text-wrapper {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }

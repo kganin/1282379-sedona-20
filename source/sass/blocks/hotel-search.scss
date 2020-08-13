@@ -5,11 +5,27 @@
 
 .hotel-search__title {
   @include reset;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .hotel-search__text {
   @include reset;
   line-height: 24px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet) {
+  .hotel-search {
+    padding: 57px 21px;
+  }
+
+  .hotel-search__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  .hotel-search__text {
+    margin-bottom: 38px;
+  }
 }

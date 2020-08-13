@@ -1,7 +1,6 @@
 .service {
   @include reset-list;
-  padding: 36px 10px 10px 10px;
-  margin-bottom: 21px;
+  padding: 36px 10px 28px 10px;
 }
 
 .service__item {
@@ -22,4 +21,23 @@
   font-size: 14px;
   line-height: 21px;
   color: $text-extra;
+}
+
+@media (min-width: $tablet) {
+  .service {
+    @include reset;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+
+  .service__item {
+    @include reset;
+    text-align: center;
+    padding: 160px 22px 60px 20px;
+  }
+
+  .service__title {
+    font-size: 21px;
+    margin-bottom: 22px;
+  }
 }

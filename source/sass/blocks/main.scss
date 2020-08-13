@@ -29,7 +29,17 @@
   color: $text-extra;
 }
 
-.main_map-image {
+.main__map {
+  margin-bottom: 20px;
+}
+
+.main__map-image {
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: $tablet) {
+  .main__map {
+    margin-bottom: 22px;
+  }
 }

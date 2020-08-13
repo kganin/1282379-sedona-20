@@ -1,3 +1,8 @@
+.footer {
+  display: block;
+  margin-bottom: 40px;
+}
+
 .footer__hashtag {
   @include reset;
   font-weight: bold;
@@ -5,21 +10,26 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding: 40px 10px 32px 10px;
-}
-
-.footer__social {
-  margin-bottom: 41px;
+  padding: 18px 0;
 }
 
 .footer__copyright {
   @include reset;
   text-align: center;
+  padding: 24px 0;
 
-  img {
+  .footer__partner-logo {
     display: inline-block;
     vertical-align: middle;
     // margin-left: -10px;
-    margin-left: 8px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
 }
