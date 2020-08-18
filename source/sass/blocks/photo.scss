@@ -126,7 +126,7 @@
 @media (min-width: $laptop) {
   .photo {
     padding: 0 40px;
-    grid-template-columns: repeat(auto-fit,minmax(30%, 1fr)); //строки 80 и 132: можно не перписывая все свойство, 50% на 30% поменять?
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); //строки 80 и 132: можно не перписывая все свойство, 50% на 30% поменять?
     margin-bottom: 63px;
   }
 
