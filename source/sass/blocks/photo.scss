@@ -1,0 +1,167 @@
+.photo {
+  margin-bottom: 33px;
+}
+
+.photo__item {
+  position: relative;
+
+  padding: 0 20px;
+  padding-bottom: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+
+  border-bottom: 1px solid $border;
+}
+
+.photo__caption {
+  @include reset;
+  margin-bottom: 2px;
+}
+
+.photo__image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 13px;
+
+  object-fit: cover;
+}
+
+.photo__item-box {
+  @include reset;
+}
+
+.photo__like-count {
+  @include reset;
+  vertical-align: unset;
+}
+
+.photo__text {
+  @include reset;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.photo__owner {
+  @include reset;
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $sub-text;
+  text-transform: none;
+}
+
+.photo__like-button {
+  width: 23px;
+  height: 20px;
+  margin-right: 10px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet) {
+  .photo {
+    display: grid;
+    align-items: center;
+    padding: 0 60px;
+    margin-bottom: 59px;
+
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+  .photo__item {
+    padding: 0;
+
+    border: none;
+
+    &--large {
+      grid-column: 1/-1;
+    }
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+
+  .photo__image {
+    margin: 0;
+    height: 267px;
+
+    &--large {
+      height: 400px;
+    }
+  }
+
+  .photo__r-col {
+    width: 75px;
+  }
+
+  .photo__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px 16px 20px;
+
+    background-color: $input-bg;
+  }
+
+  .photo__owner {
+    margin-bottom: 0;
+  }
+
+  .photo__like-button {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .photo {
+    padding: 0 40px;
+    grid-template-columns: repeat(auto-fit,minmax(30%, 1fr)); //строки 80 и 132: можно не перписывая все свойство, 50% на 30% поменять?
+    margin-bottom: 63px;
+  }
+
+  .photo__item-box {
+    position: relative;
+  }
+
+  .photo__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .photo__caption {
+    &--white-text {
+      color: $basic-white;
+    }
+  }
+
+  .photo__owner {
+    &--white-text {
+      color: $basic-white;
+    }
+  }
+
+  .photo__like-button {
+    &--white {
+      filter: invert(100%);
+    }
+  }
+
+  .photo__like-count {
+    &--white-text {
+      color: $basic-white;
+    }
+  }
+}

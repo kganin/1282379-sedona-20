@@ -1,0 +1,29 @@
+.feedback {
+  padding: 0 20px;
+  margin-bottom: 40px;
+
+  &--border {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.feedback__title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .feedback {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 49px;
+  }
+
+  .feedback__title {
+    font-size: 21px;
+    margin-bottom: 53px;
+  }
+}

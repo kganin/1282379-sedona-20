@@ -12,15 +12,25 @@
 
 //blocks, components
 
-@import "blocks/page";
 @import "blocks/header";
-@import "blocks/main";
-@import "blocks/heading";
+@import "blocks/page-heading";
 @import "blocks/features";
-@import "blocks/service";
+@import "blocks/services";
 @import "blocks/hotel-search";
+@import "blocks/map";
 @import "blocks/social";
-@import "blocks/gallery";
+@import "blocks/photo";
 @import "blocks/video";
-@import "blocks/modal";
+@import "blocks/control-panel";
 @import "blocks/footer";
+
+//form
+
+@import "blocks/text-input";
+@import "blocks/custom-input";
+@import "blocks/form";
+@import "blocks/user-id";
+@import "blocks/contacts";
+@import "blocks/review";
+@import "blocks/seen-places";
+@import "blocks/feedback";

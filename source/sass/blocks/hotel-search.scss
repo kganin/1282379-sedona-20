@@ -1,5 +1,4 @@
 .hotel-search {
-  padding: 33px 10px 49px 10px;
   text-align: center;
 }
 
@@ -10,22 +9,42 @@
 
 .hotel-search__text {
   @include reset;
-  line-height: 24px;
   margin-bottom: 27px;
+  line-height: 24px;
+  color: $sub-text;
+}
+
+.hotel-search__button {
+  margin-bottom: 49px;
 }
 
 @media (min-width: $tablet) {
-  .hotel-search {
-    padding: 57px 21px;
+  .hotel-search__wrapper {
+    padding: 0 20px;
   }
 
   .hotel-search__title {
     font-size: 30px;
-    line-height: 26px;
     margin-bottom: 32px;
   }
 
   .hotel-search__text {
     margin-bottom: 38px;
+  }
+
+  .hotel-search__button {
+    width: 100%;
+    max-width: 458px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .hotel-search__text {
+    margin-bottom: 42px;
+  }
+
+  .hotel-search__button {
+    margin-bottom: 66px;
   }
 }

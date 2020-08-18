@@ -1,35 +1,41 @@
 .footer {
-  display: block;
   margin-bottom: 40px;
 }
 
 .footer__hashtag {
   @include reset;
+  text-align: center;
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 18px 0;
+  margin-bottom: 32px;
 }
 
 .footer__copyright {
   @include reset;
   text-align: center;
-  padding: 24px 0;
 
   .footer__partner-logo {
     display: inline-block;
     vertical-align: middle;
-    // margin-left: -10px;
     margin-left: 10px;
   }
 }
 
 @media (min-width: $tablet) {
-  .footer {
-    display: grid;
+  .footer__wrapper {
+    display: flex;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+
+  .footer__hashtag {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $laptop) {
+  .footer__wrapper {
+    padding: 0 160px;
   }
 }

@@ -1,9 +1,11 @@
 .social {
   @include reset-list;
-  padding: 16px 0;
+  // padding: 16px 0;
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 41px;
 
   li:not(:last-child) {
     margin-right: 3px;
@@ -31,5 +33,11 @@
 
   &--youtube {
     background-image: url("../img/icon-facebook.svg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .social {
+    margin-bottom: 0;
   }
 }

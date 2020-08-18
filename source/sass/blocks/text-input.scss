@@ -1,0 +1,44 @@
+.text-input {
+  // flex-grow: 1;
+  width: 100%;
+  padding: 18px 22px 14px 22px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $basic-black;
+
+  background-color: $input-bg;
+  border: none;
+
+  &--contacts {
+    padding-right: 80px;
+  }
+
+  &--text-area {
+    min-height: 160px;
+    padding: 13px 20px 30px 20px;
+
+    resize: none;
+  }
+
+  &::placeholder {
+    color: $basic-black;
+  }
+}
+
+@media (min-width: $tablet) {
+  .text-input {
+    &--text-area {
+      padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .text-input {
+    &--text-area {
+      width: 100%;
+    }
+  }
+}

@@ -1,16 +1,16 @@
 .header {
   position: relative;
-  display: flex;
-  flex-flow: column wrap;
-  padding-bottom: 56px;
+  padding-bottom: 54px;
 }
 
 .header__logo {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: -28px;
-  order: 2;
+  left: 50%;
+
+  order: 1;
+
+  transform: translateX(-50%);
 }
 
 .header__nav {
@@ -18,11 +18,12 @@
 }
 
 .header__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
   width: 22px;
   height: 22px;
-  position: absolute;
-  right: 20px;
-  top: 17px;
 
   background-color: transparent;
   background-image: url("../img/icon-cross.svg");
@@ -34,24 +35,40 @@
 
 .header__nav-list {
   @include reset-list;
+  width: 100%;
 }
 
 .header__nav-item {
-  &:not(:last-child) {
-    margin-bottom: 1px; //1 здесь даю маргин всем кроме последнего
+  position: relative;
+
+  margin-bottom: 2px;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+
+    width: 100%;
+
+    border-top: 1px solid #678fa8;
+    border-bottom: 1px solid #9ac2db;
+  }
+
+  &--shadow {
+    content: "";
   }
 }
 
-.header__link {
+.header__nav-link {
   display: block;
-  text-align: center;
-  padding: 10px 10px 5px 10px;
-  word-wrap: break-word;
+  padding: 10px 10px 4px 10px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  color: $text-secondary;
+  text-align: center;
+  color: $extra-text;
+  word-wrap: break-word;
 
   &--active {
     cursor: default;
@@ -60,48 +77,47 @@
 
 @media (min-width: $tablet) {
   .header {
-    padding: 0;
+    padding-bottom: 0;
   }
 
   .header__logo {
     top: 0;
   }
 
-  .header__nav {
-    background-color: $text-secondary;
-    width: 100%;
-  }
-
   .header__toggle {
     display: none;
+  }
+
+  .header__nav {
+    background-color: inherit;
   }
 
   .header__nav-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: flex-start;
   }
 
   .header__nav-item {
     flex-basis: 20%;
 
-    &:not(:last-child) {
-      //3 а с таким селектором работает, почему?
-      margin: 0;
+    &:nth-child(4n + 3) {
+      margin-left: auto;
     }
 
-    margin: 0; //2 здесь обнуляю маргины ВСЕМ, не работает так
-
-    &:nth-child(3) {
-      margin-left: auto;
+    &:not(:last-child)::after {
+      content: none;
     }
   }
 
-  .header__link {
-    color: $text-main;
+  .header__nav-link {
     font-size: 14px;
-    line-height: 26px;
-    padding-top: 16px;
-    padding-bottom: 14px;
+    color: $main-text;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    padding: 0 40px;
   }
 }

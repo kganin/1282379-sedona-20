@@ -1,0 +1,93 @@
+.seen-places {
+  padding: 0 20px;
+  padding-bottom: 37px;
+  margin-bottom: 21px;
+
+  &--border {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.seen-places__title {
+  @include reset;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.seen-places__list {
+  @include reset-list;
+}
+
+.seen-places__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 53px;
+  }
+}
+
+.seen-places__caption {
+  padding-left: 77px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.seen-places__checkbox-input {
+  position: absolute;
+
+  appearance: none;
+}
+
+@media (min-width: $tablet) {
+  .seen-places {
+    flex-basis: 100%;
+    padding: 0 66px 0 98px;
+    margin-bottom: 23px;
+
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  .seen-places__title {
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  .seen-places__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .seen-places__item {
+    min-width: 225px;
+
+    &:not(:last-child) {
+      margin-bottom: 61px;
+      padding-right: 15px;
+    }
+
+    &:last-child {
+      margin-bottom: 61px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .seen-places {
+    padding: 0;
+    margin-bottom: 22px;
+  }
+
+  .seen-places__item {
+    min-width: 165px;
+  }
+
+  .seen-places__title {
+    margin-bottom: 59px;
+  }
+}
