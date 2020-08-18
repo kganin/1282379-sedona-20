@@ -94,10 +94,11 @@
 
   .photo__image {
     margin: 0;
-    height: 267px;
+    width: 100%;
+    max-height: 267px;
 
     &--large {
-      height: 400px;
+      max-height: 400px;
     }
   }
 
