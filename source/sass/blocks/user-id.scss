@@ -1,0 +1,47 @@
+.user-id {
+  padding: 0 20px;
+  padding-bottom: 24px;
+  margin-bottom: 21px;
+
+  &--border {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.user-id__title {
+  @include reset;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.user-id__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.user-id__caption {
+  margin-right: 15px;
+}
+
+@media (min-width: $tablet) {
+  .user-id {
+    padding: 0;
+    flex-basis: 42%;
+    margin-bottom: 0;
+
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  .user-id__title {
+    text-align: left;
+    font-size: 21px;
+    margin-bottom: 56px;
+  }
+}

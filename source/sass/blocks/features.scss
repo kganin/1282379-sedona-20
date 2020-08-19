@@ -1,12 +1,130 @@
 .features {
-  @include reset-list;
+  margin-bottom: 33px;
+}
 
-  &--grey-bg {
-    background-color: $features-bg;
+.features__item {
+  background-color: $main-color;
+
+  &--triangle {
+    padding-top: 15px;
+  }
+
+  &--white-text {
+    color: $extra-text;
   }
 }
 
 .features__text-wrapper {
-  background-color: $main-color;
-  color: $text-secondary;
+  margin: 0 auto;
+  padding-top: 41px;
+  padding-bottom: 37px;
+
+  &--additional {
+    padding-top: 28px;
+    padding-bottom: 25px;
+    width: 88%;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $border;
+    }
+  }
+}
+
+.features__title {
+  @include reset;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.features__number {
+  @include reset;
+  display: block;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.features__text {
+  @include reset;
+  line-height: 21px;
+  text-align: center;
+}
+
+.features__features-group {
+  @include reset-list;
+  background-color: $features-bg;
+}
+
+@media (min-width: $tablet) {
+  .features {
+    margin-bottom: 55px;
+  }
+
+  .features__item {
+    display: flex;
+
+    &--triangle {
+      padding-top: 0;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .features__text-wrapper {
+    width: calc(100% / 3);
+
+    &--additional {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      min-height: 256px;
+
+      &:not(:last-child) {
+        border: none;
+      }
+    }
+  }
+
+  .features__title {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  .features__number {
+    margin-bottom: 20px;
+  }
+
+  .features__image-wrapper {
+    width: calc(100% / 3 * 2);
+    display: flex;
+    align-items: center;
+  }
+
+  .features__image {
+    height: 256px;
+  }
+
+  .features__features-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $laptop) {
+  .features {
+    padding: 0 40px;
+    margin-bottom: 58px;
+  }
+
+  .features__text-wrapper {
+    padding-top: 51px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+
+    &--additional {
+      padding-top: 44px;
+    }
+  }
 }

@@ -1,17 +1,24 @@
-body {
+* {
+  box-sizing: border-box;
+}
 
+body {
   font-size: 14px;
   line-height: 26px;
   font-family: $main-font;
+  color: $main-text;
   text-transform: uppercase;
 }
 
 img {
   display: block;
+  width: 100%;
+
+  object-fit: cover;
 }
 
 a {
-  color: $text-main;
+  color: $basic-black;
   text-decoration: none;
 }
 
@@ -30,4 +37,24 @@ a {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+
+  @media (min-width: $laptop) {
+    &-mob {
+      display: none;
+    }
+  }
+}
+
+.container {
+  min-width: $mobile-s;
+  max-width: $mobile-l;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: $laptop-container;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: $desktop-container;
+  }
 }

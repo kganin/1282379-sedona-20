@@ -1,0 +1,161 @@
+.page-heading {
+  margin-bottom: 31px;
+
+  &--border {
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid $border;
+  }
+
+  &--inner {
+    margin-bottom: 21px;
+  }
+}
+
+.page-heading__image-wrapper {
+  height: 390px;
+  margin-bottom: 31px;
+  padding-top: 90px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+  &--inner {
+    height: 159px;
+    margin-bottom: 37px;
+    padding-top: 52px;
+  }
+
+  &--photo {
+    margin-bottom: 33px;
+  }
+}
+
+.page-heading__image {
+  width: 280px;
+  height: auto;
+  margin: 0 auto;
+
+  &--inner {
+    width: 230px;
+  }
+}
+
+.page-heading__text-wrapper {
+  margin: 0 auto;
+  // width: 80%;
+  padding: 0 25px;
+
+  &--inner {
+    // width: 95%;
+    padding: 0 20px;
+  }
+}
+
+.page-heading__title {
+  @include reset;
+  margin-bottom: 31px;
+
+  font-size: 18px;
+  text-align: center;
+
+  &--inner {
+    margin-bottom: 29px;
+  }
+}
+
+.page-heading__text {
+  @include reset;
+  text-align: center;
+  color: $sub-text;
+
+  &--inner {
+    line-height: 24px;
+  }
+
+  &--photo {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-heading {
+    margin-bottom: 53px;
+
+    &--border {
+      padding-bottom: 0;
+
+      border: none;
+    }
+
+    &--inner {
+      margin-bottom: 87px;
+    }
+
+    &--photo {
+      margin-bottom: 78px;
+    }
+  }
+
+  .page-heading__image-wrapper {
+    height: 518px;
+    margin-bottom: 45px;
+
+    &--inner {
+      height: 290px;
+      margin-bottom: 64px;
+      padding-top: 94px;
+    }
+  }
+
+  .page-heading__image {
+    &--inner {
+      width: 457px;
+    }
+  }
+
+  .page-heading__title {
+    margin-bottom: 32px;
+
+    font-size: 21px;
+
+    &--inner {
+      font-size: 30px;
+    }
+  }
+
+  .page-heading__text {
+    &--photo {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .page-heading {
+      margin-bottom: 40px;
+
+      &--inner {
+        margin-bottom: 59px;
+      }
+
+      &--photo {
+        margin-bottom: 79px;
+      }
+    }
+
+    .page-heading__image-wrapper {
+      margin-bottom: 56px;
+
+      &--inner {
+        height: 300px;
+        margin-bottom: 115px;
+        padding-top: 102px;
+      }
+
+      &--photo {
+        margin-bottom: 103px;
+      }
+    }
+  }
+}

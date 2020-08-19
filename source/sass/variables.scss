@@ -2,18 +2,31 @@
 
 $main-color: #81b3d2;
 
-$text-main: #000000;
-$text-secondary: #ffffff;
-$text-extra: #333333;
+$basic-black: #000000;
+$basic-white: #ffffff;
+
+$main-text: #000000;
+$sub-text: #333333;
+$extra-text: #ffffff;
 
 $features-bg: #eeeeee;
 $input-bg: #f2f2f2;
+$border: #d6d6d6;
 
-// breakpoints
+// viewports
 
-$mobile-only: 767px;
+$mobile-s: 320px;
+$mobile-l: 425px;
 $tablet: 768px;
-$desktop: 1200px;
+$laptop: 1024px;
+$desktop: 1440px;
+
+// containers
+
+$mobile-container: 480px;
+$tablet-container: 768px;
+$laptop-container: 1024px;
+$desktop-container: 1280px;
 
 // fonts
 

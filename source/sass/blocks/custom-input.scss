@@ -1,0 +1,28 @@
+.custom-input {
+  position: absolute;
+  bottom: 50%;
+
+  width: 55px;
+  height: 55px;
+  margin-left: -78px;
+
+  background-color: $input-bg;
+  border-radius: 50%;
+  transform: translateY(50%);
+  cursor: pointer;
+
+  &--checkbox {
+    border-radius: 5px;
+  }
+
+  input[type="radio"]:checked + &--radio {
+    background-color: $basic-black;
+    border: 17px solid $input-bg;
+  }
+
+  input[type="checkbox"]:checked + &--checkbox {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

@@ -1,0 +1,15 @@
+.map {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet) {
+  .map {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .map {
+    padding: 0 40px;
+  }
+}

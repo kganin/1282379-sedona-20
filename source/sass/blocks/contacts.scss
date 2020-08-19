@@ -1,0 +1,122 @@
+.contacts {
+  margin-bottom: 20px;
+  padding: 0 20px;
+  padding-bottom: 26px;
+
+  &--border {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.contacts__title {
+  @include reset;
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  text-align: center;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts__icon {
+  &::after {
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    bottom: 0;
+    right: 0;
+  }
+
+  &--phone {
+    &::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &--mail {
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
+.contacts__caption {
+  margin-bottom: 10px;
+
+  padding-left: 22px;
+  white-space: nowrap; // можно так сделать чтоб текст не переносился на вторую строку, тип по переполнению не будет ошибкой?
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    padding: 0;
+    padding-top: 73px;
+
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  .contacts__title {
+    margin-bottom: 19px;
+
+    font-size: 21px;
+  }
+
+  .contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .contacts {
+    padding-top: 71px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .contacts__title {
+    flex-basis: 100%;
+    margin-bottom: 71px;
+  }
+
+  .contacts__item {
+    flex-basis: 42%;
+    flex-direction: row;
+    align-items: baseline;
+
+    // &:not(:last-child) {
+    //   margin-right: 20px;
+    // }
+
+    &:last-child {
+      margin-bottom: 20px;
+      flex-basis: 50%;
+    }
+  }
+
+  .contacts__caption {
+    @include reset;
+    margin-right: 19px;
+  }
+}

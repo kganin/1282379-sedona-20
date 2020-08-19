@@ -1,0 +1,64 @@
+.video {
+  margin-bottom: 78px;
+}
+
+.video__text-wrapper {
+  margin-bottom: 33px;
+  padding: 0 10px;
+
+  text-align: center;
+}
+
+.video__title {
+  @include reset;
+  margin-bottom: 28px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.video__text {
+  @include reset;
+  line-height: 24px;
+}
+
+.video__content {
+  position: relative;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .video {
+    padding: 0 60px;
+  }
+
+  .video__text-wrapper {
+    margin-bottom: 79px;
+    padding: 0;
+  }
+
+  .video__title {
+    margin-bottom: 32px;
+
+    font-size: 30px;
+  }
+
+  .video__preview {
+    height: 500px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .video {
+    padding: 0 240px; // хз вот как понять че лучше? такие большие паддинги или просто ширину в процентах для .video дать
+    margin-bottom: 122px;
+  }
+
+  .video__text-wrapper {
+    margin-bottom: 77px;
+  }
+}

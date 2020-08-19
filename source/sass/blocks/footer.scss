@@ -1,15 +1,50 @@
+.footer {
+  margin-bottom: 40px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__hashtag {
   @include reset;
+  text-align: center;
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 .footer__copyright {
-  img {
+  @include reset;
+  text-align: center;
+
+  .footer__partner-logo {
     display: inline-block;
-    vertical-align: middle;
-    // margin-left: -10px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+
+  .footer__hashtag {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .footer__wrapper {
+    padding: 0 160px;
   }
 }

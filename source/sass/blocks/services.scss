@@ -1,0 +1,130 @@
+.services {
+  @include reset-list;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.services__item {
+  padding-left: 49px;
+  padding-top: 16px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &::before {
+    content: "";
+    width: 39px;
+    height: 37px;
+
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
+  &--house {
+    &::before {
+      background-image: url("../img/icon-house.svg");
+    }
+  }
+
+  &--gift {
+    &::before {
+      background-image: url("../img/icon-gift.svg");
+      top: 5px;
+      left: 6px;
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../img/icon-burger.svg");
+      top: 10px;
+    }
+  }
+}
+
+.services__title {
+  @include reset;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.services__text {
+  @include reset;
+  line-height: 21px;
+}
+
+@media (min-width: $tablet) {
+  .services {
+    @include reset;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services__title {
+    font-size: 21px;
+    margin-bottom: 21px;
+  }
+
+  .services__item {
+    width: calc(100% / 3);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 159px;
+    text-align: center;
+
+    &:not(:last-child) {
+      // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов
+      margin-bottom: 64px;
+    }
+
+    &:last-child {
+      margin-bottom: 64px;
+    }
+
+    &::before {
+      width: 75px;
+      height: 72px;
+
+      left: 50%;
+      transform: translateX(-50%);
+      top: 60px;
+    }
+
+    &--house {
+      order: 0;
+    }
+
+    &--gift {
+      order: 2;
+
+      &::before {
+        width: 64px;
+      }
+    }
+
+    &--food {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .services__item {
+    padding-top: 162px;
+
+    &:not(:last-child) {
+      // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов
+      margin-bottom: 81px;
+    }
+
+    &:last-child {
+      margin-bottom: 81px;
+    }
+  }
+}
