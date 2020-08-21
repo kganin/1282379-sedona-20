@@ -6,11 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/mockup/m-index.png");
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("img/mockup/t-index.png");
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 960px) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("img/mockup/d-index.png");
+    }
+  }
+
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
   <header class="header container">
-    <a class="header__logo" href=""><img class="header__image" src="../img/logo-sedona-mobile.svg" alt="Логотип штат Седона"></a>
+    <a class="header__logo" href="">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="header__image" src="img/logo-sedona-mobile.svg" alt="Логотип штат Седона">
+      </picture>
+    </a>
     <nav class="header__nav">
       <button class="header__toggle" type="button"></button>
       <ul class="header__nav-list">
@@ -40,7 +75,12 @@
           <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="features__image-wrapper">
-          <img class="features__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Придорожное кафе">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+
+          <img class="features__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Придорожное кафе">
+        </picture>
         </div>
       </div>
       <ul class="services container">
@@ -64,7 +104,11 @@
           <p class="features__text">Да, по нему можно пройти если Вы осмелитесь, конечно</p>
         </div>
         <div class="features__image-wrapper">
-          <img class="features__image" src="../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+         <picture>
+           <source media="(min-width: 1024px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+           <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+           <img class="features__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+         </picture>
         </div>
       </div>
       <ul class="features__features-group">
@@ -95,7 +139,6 @@
     <article class="map container">
       <h2 class="hidden">Как добраться?</h2>
       <div class="map__yandex-js"></div>
-      <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Штат Седона">
     </article>
   </main>
   <footer class="footer container">

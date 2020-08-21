@@ -6,11 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Фотогалерея</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/mockup/m-photo.png");
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("img/mockup/t-photo.png");
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 960px) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("img/mockup/d-photo.png");
+    }
+  }
+
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
 </head>
 
 <body>
   <header class="header container">
-    <a class="header__logo" href="index.html"><img class="header__image" src="../img/logo-sedona-mobile.svg" alt="Логотип штат Седона"></a>
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="header__image" src="img/logo-sedona-mobile.svg" alt="Логотип штат Седона">
+      </picture>
+    </a>
     <nav class="header__nav">
       <button class="header__toggle" type="button"></button>
       <ul class="header__nav-list">
@@ -28,7 +64,7 @@
       </div>
       <div class="page-heading__text-wrapper page-heading__text-wrapper--inner">
         <h1 class="page-heading__title page-heading__title--inner">Фото и видео</h1>
-        <p class="page-heading__text page-heading__text--inner page-heading__text--photo">Не можете решиться на путешествие из-за курса, фотографии помогут вам забыть о политике и экономике</p>
+        <p class="page-heading__text page-heading__text--inner page-heading__text--photo">Не можете решиться на путешествие из-за курса, <br> фотографии помогут вам забыть о политике и экономике</p>
       </div>
     </header>
     <section class="photo container">
@@ -36,7 +72,11 @@
       <article class="photo__item photo__item--large">
         <h3 class="hidden">Фото</h3>
         <figure class="photo__item-box">
-          <img class="photo__image photo__image--large" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" height="280" width="280">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+            <img class="photo__image photo__image--large" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+          </picture>
           <figcaption class="photo__text">
             <div class="photo__l-col">
               <h4 class="photo__caption photo__caption--white-text">Неродные просторы</h4>
@@ -52,7 +92,11 @@
       <article class="photo__item">
         <h3 class="hidden">Фото</h3>
         <figure class="photo__item-box">
-          <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" height="280" width="280">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+            <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+          </picture>
           <figcaption class="photo__text">
             <div class="photo__l-col">
               <h4 class="photo__caption photo__caption--white-text">Местная растительность</h4>
@@ -68,7 +112,12 @@
       <article class="photo__item">
         <h3 class="hidden">Фото</h3>
         <figure class="photo__item-box">
-          <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" height="280" width="280">
+
+           <picture>
+            <source media="(min-width: 1024px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+            <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+          </picture>
           <figcaption class="photo__text">
             <div class="photo__l-col">
               <h4 class="photo__caption photo__caption--white-text">Дорога на север</h4>
@@ -84,7 +133,11 @@
       <article class="photo__item">
         <h3 class="hidden">Фото</h3>
         <figure class="photo__item-box">
-          <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" height="280" width="280">
+           <picture>
+            <source media="(min-width: 1024px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+          </picture>
           <figcaption class="photo__text">
             <div class="photo__l-col">
               <h4 class="photo__caption photo__caption--white-text">Мост дьявола</h4>
@@ -105,7 +158,12 @@
       </div>
       <article class="video__content">
         <h3 class="hidden">Видео-презентация</h3>
-        <img class="video__preview" src="img/video-mobile@1x.jpg" alt="Видеопрезентация" width="320" height="201">
+
+         <picture>
+            <source media="(min-width: 1024px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
+          </picture>
         <div class="video__control-panel control-panel">
           <button class="control-panel__button control-panel__button--replay" type="button"><span class="hidden">Повторить заного</span></button>
           <div class="control-panel__progress-bar-wrapper">

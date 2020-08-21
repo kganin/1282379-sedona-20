@@ -97,8 +97,6 @@
 
   .features__image-wrapper {
     width: calc(100% / 3 * 2);
-    display: flex;
-    align-items: center;
   }
 
   .features__image {
@@ -116,6 +114,7 @@
     padding: 0 40px;
     margin-bottom: 58px;
   }
+
 
   .features__text-wrapper {
     padding-top: 51px;
