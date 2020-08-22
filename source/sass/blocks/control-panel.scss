@@ -14,6 +14,7 @@
   position: absolute;
   bottom: 66px;
   left: 50%;
+  padding: 0 20px;
 
   width: 87%;
   height: 46px;
@@ -88,6 +89,8 @@
   .control-panel__progress-bar-wrapper {
     position: static;
     left: 0;
+    padding-right: 0;
+    padding-left: 0;
 
     width: 68%;
     margin-left: 37px;
@@ -101,7 +104,6 @@
   }
 
   .control-panel__button {
-    // можно было просто написать .control-panel__button--subs?
     &--subs {
       margin-right: 30px;
     }

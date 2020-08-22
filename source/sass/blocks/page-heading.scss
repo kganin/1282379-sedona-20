@@ -1,5 +1,5 @@
 .page-heading {
-  margin-bottom: 31px;
+  margin-bottom: 15px;
 
   &--border {
     padding-bottom: 15px;
@@ -13,6 +13,7 @@
 }
 
 .page-heading__image-wrapper {
+  position: relative;
   height: 390px;
   margin-bottom: 31px;
   padding-top: 90px;
@@ -35,6 +36,19 @@
 
   &--photo {
     margin-bottom: 33px;
+  }
+
+  &::after {
+    z-index: 20;
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    background-size: 100% auto;
   }
 }
 
@@ -102,6 +116,7 @@
     &--photo {
       margin-bottom: 78px;
     }
+
   }
 
   .page-heading__image-wrapper {
@@ -109,6 +124,7 @@
     margin-bottom: 45px;
       padding-top: 78px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+         background-size: cover ;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -121,6 +137,11 @@
       margin-bottom: 64px;
       padding-top: 94px;
     }
+
+          &::after {
+            background-image: url("../img/bg-intro-triangle-tablet.svg");
+ }
+
   }
 
   .page-heading__image {
@@ -178,6 +199,10 @@
       &--photo {
         margin-bottom: 103px;
       }
+
+            &::after {
+            background-image: url("../img/bg-intro-triangle-desktop.svg"); }
+
     }
   }
 }
