@@ -6,35 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    /* Mobile layout by default */
-    background-image: url("img/mockup/m-feedback.png");
-  }
-
-  /* Tablet */
-  @media (min-width: 768px) {
-    HTML {
-      /* Tablet layout */
-      background-image: url("img/mockup/t-feedback.png");
-    }
-  }
-
-  /* Desktop */
-  @media (min-width: 960px) {
-    HTML {
-      /* Desktop layout */
-      background-image: url("img/mockup/d-feedback.png");
-    }
-  }
-
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -63,7 +34,7 @@
       </div>
       <div class="page-heading__text-wrapper page-heading__text-wrapper--inner">
         <h1 class="page-heading__title page-heading__title--inner">Оставьте свой отзыв</h1>
-        <p class="page-heading__text page-heading__text--inner">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных Вами достопримечательностях</p>
+        <p class="page-heading__text page-heading__text--inner">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br class="mobile-hidden"> а также о посещенных Вами достопримечательностях</p>
       </div>
     </header>
     <form class="form container" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -167,7 +138,7 @@
   </main>
   <footer class="footer container">
     <div class="footer__wrapper">
-      <p class="footer__hashtag">#visitsedona</p>
+      <a class="footer__hashtag" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
       <ul class="social">
         <li class="social__item"><a href="" class="social__link social__link--twitter"><span class="hidden">Мы в twitter</span></a></li>
         <li class="social__item"><a href="" class="social__link social__link--youtube"><span class="hidden">Мы в facebook</span></a></li>

@@ -8,6 +8,7 @@
   padding-left: 49px;
   padding-top: 16px;
   position: relative;
+  padding-right: 20px;
 
   &:not(:last-child) {
     margin-bottom: 11px;
@@ -73,8 +74,8 @@
 
   .services__item {
     width: calc(100% / 3);
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-top: 159px;
     text-align: center;
 
@@ -98,6 +99,8 @@
 
     &--house {
       order: 0;
+      padding-right: 35px;
+      padding-left: 35px;
     }
 
     &--gift {
@@ -117,6 +120,8 @@
 @media (min-width: $laptop) {
   .services__item {
     padding-top: 162px;
+    padding-right: 50px;
+    padding-left: 50px;
 
     &:not(:last-child) {
       // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов

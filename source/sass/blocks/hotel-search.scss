@@ -9,6 +9,8 @@
 
 .hotel-search__text {
   @include reset;
+  padding: 0 20px;
+
   margin-bottom: 27px;
   line-height: 24px;
   color: $sub-text;

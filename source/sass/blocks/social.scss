@@ -40,8 +40,26 @@
 
   &--youtube {
     background-image: url("../img/icon-facebook.svg");
+
+    &:active {
+      background-color: #5496bd;
+      opacity: 0.3;
+    }
   }
 }
+//   //   &:hover {
+//   // background-color: #669ec0;
+//   //    }
+
+//   //    &:focus {
+//   // background-color: #669ec0;
+//   //    }
+
+//   //    &:active {
+//   //     background-color: #5496bd;
+//   //     color: rgba($extra-text, 0.3);
+//   //    }
+// }
 
 @media (min-width: $tablet) {
   .social {

@@ -25,5 +25,27 @@
   .feedback__title {
     font-size: 21px;
     margin-bottom: 53px;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+      height: 1px;
+      background-color: $border;
+      margin-right: 75px;
+    }
+
+    &::after {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+
+      height: 1px;
+      background-color: $border;
+      margin-left: 75px;
+    }
   }
 }

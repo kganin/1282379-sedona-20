@@ -6,40 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    /* Mobile layout by default */
-    background-image: url("img/mockup/m-index.png");
-  }
-
-  /* Tablet */
-  @media (min-width: 768px) {
-    HTML {
-      /* Tablet layout */
-      background-image: url("img/mockup/t-index.png");
-    }
-  }
-
-  /* Desktop */
-  @media (min-width: 960px) {
-    HTML {
-      /* Desktop layout */
-      background-image: url("img/mockup/d-index.png");
-    }
-  }
-
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
   <header class="header container">
-    <a class="header__logo" href="">
+    <a class="header__logo">
       <picture>
         <source media="(min-width: 1024px)" srcset="img/logo-sedona-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -49,7 +20,7 @@
     <nav class="header__nav">
       <button class="header__toggle" type="button"></button>
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="" class="header__nav-link header__nav-link--active">Главная</a></li>
+        <li class="header__nav-item"><a class="header__nav-link header__nav-link--active">Главная</a></li>
         <li class="header__nav-item"><a href="photo.html" class="header__nav-link">Фото и видео</a></li>
         <li class="header__nav-item"><a href="form.html" class="header__nav-link">Форма отзыва</a></li>
         <li class="header__nav-item header__nav-item--shadow"><a href="https://htmlacademy.ru/intensive/adaptive" class="header__nav-link">HTML Academy</a></li>
@@ -70,7 +41,7 @@
       <h2 class="hidden">Наши преймущества</h2>
       <div class="features__item features__item--triangle features__item--white-text">
         <div class="features__text-wrapper">
-          <h3 class="features__title">Настоящий городок</h3>
+          <h3 class="features__title">Настоящий <br class="mobile-hidden"> городок</h3>
           <span class="features__number">- №1 -</span>
           <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -93,12 +64,12 @@
         </li>
         <li class="services__item services__item--food">
           <h3 class="services__title">Еда</h3>
-          <p class="services__text">Всегда заказывайте Фирменный бургер, Вы не разочируетесь!</p>
+          <p class="services__text">Всегда заказывайте Фирменный бургер,<br class="mobile-hidden"> Вы не разочируетесь!</p>
         </li>
       </ul>
       <div class="features__item features__item--reverse features__item--white-text">
         <div class="features__text-wrapper">
-          <h3 class="features__title">Там есть Мост&nbsp;дьявола</h3>
+          <h3 class="features__title">Там есть <br class="mobile-hidden"> Мост&nbsp;дьявола</h3>
           <span class="features__number">- №2 -</span>
           <p class="features__text">Да, по нему можно пройти если Вы осмелитесь, конечно</p>
         </div>
@@ -112,17 +83,17 @@
       </div>
       <ul class="features__features-group">
         <li class="features__text-wrapper features__text-wrapper--additional">
-          <h3 class="features__title">Небольшая площадь</h3>
+          <h3 class="features__title">Небольшая <br class="mobile-hidden"> площадь</h3>
           <span class="features__number">- №3 -</span>
           <p class="features__text">Все интересные места находятся очень близко</p>
         </li>
         <li class="features__text-wrapper features__text-wrapper--additional">
-          <h3 class="features__title">Красивая дорога</h3>
+          <h3 class="features__title">Красивая <br class="mobile-hidden"> дорога</h3>
           <span class="features__number">- №4 -</span>
-          <p class="features__text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+          <p class="features__text">Ехать в Седону из Лас-&nbsp;вегаса совсем не&nbsp;скучно!</p>
         </li>
         <li class="features__text-wrapper features__text-wrapper--additional">
-          <h3 class="features__title">Мало туристов</h3>
+          <h3 class="features__title">Мало <br class="mobile-hidden"> туристов</h3>
           <span class="features__number">- №5</span>
           <p class="features__text">Большинство едет в Гранд-каньон и толпится там</p>
         </li>
@@ -131,7 +102,7 @@
     <section class="hotel-search container">
       <div class="hotel-search__wrapper">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__text">Укажите предпологаемые даты поездки, <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <p class="hotel-search__text">Укажите предпологаемые даты поездки,<br class="mobile-hidden"> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="hotel-search__button button" type="button">Найти гостиницу</button>
       </div>
     </section>
@@ -142,7 +113,7 @@
   </main>
   <footer class="footer container">
     <div class="footer__wrapper">
-      <p class="footer__hashtag">#visitsedona</p>
+      <a class="footer__hashtag" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
       <ul class="social">
         <li class="social__item"><a href="" class="social__link social__link--twitter"><span class="hidden">Мы в twitter</span></a></li>
         <li class="social__item"><a href="" class="social__link social__link--youtube"><span class="hidden">Мы в facebook</span></a></li>

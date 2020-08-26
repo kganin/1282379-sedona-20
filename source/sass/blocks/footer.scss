@@ -15,6 +15,18 @@
   font-weight: bold;
   font-size: 21px;
   margin-bottom: 32px;
+
+  &:focus {
+    color: $main-color;
+  }
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 .footer__copyright {
@@ -26,13 +38,23 @@
     vertical-align: top;
     margin-left: 10px;
     margin-bottom: 10px;
+
+    &:hover {
+      filter: invert(72%) sepia(13%) saturate(922%) hue-rotate(159deg) brightness(92%) contrast(94%);
+    }
+
+    &:focus {
+      filter: invert(72%) sepia(13%) saturate(922%) hue-rotate(159deg) brightness(92%) contrast(94%);
+    }
+
+    &:active {
+      filter: invert(71%) sepia(14%) saturate(0%) hue-rotate(203deg) brightness(98%) contrast(95%);
+    }
   }
 }
 
 @media (min-width: $tablet) {
   .footer__wrapper {
-    display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 60px;

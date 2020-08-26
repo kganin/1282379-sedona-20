@@ -44,7 +44,8 @@
 @media (min-width: $tablet) {
   .seen-places {
     flex-basis: 100%;
-    padding: 0 66px 0 98px;
+    padding: 0;
+
     margin-bottom: 23px;
 
     &--border {
@@ -55,9 +56,32 @@
   .seen-places__title {
     font-size: 21px;
     margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+      height: 1px;
+      background-color: $border;
+      margin-right: 60px;
+    }
+
+    &::after {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+
+      height: 1px;
+      background-color: $border;
+      margin-left: 60px;
+    }
   }
 
   .seen-places__list {
+    padding: 0 66px 0 98px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,5 +113,9 @@
 
   .seen-places__title {
     margin-bottom: 59px;
+  }
+
+  .seen-places__list {
+    padding: 0;
   }
 }

@@ -121,6 +121,7 @@
 
   .photo__like-button {
     margin-right: 5px;
+    filter: invert(75%) sepia(13%) saturate(0%) hue-rotate(197deg) brightness(87%) contrast(83%);
   }
 }
 

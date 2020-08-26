@@ -1,28 +1,27 @@
 .features {
   margin-bottom: 33px;
-    position: relative;
+  position: relative;
 }
 
 .features__item {
   background-color: $main-color;
 
-
-
   &--triangle {
     padding-top: 31px;
+
     &::after {
       z-index: 20;
-    content: "";
+      content: "";
 
-    position: absolute;
-    background-image: url("../img/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    top: 0px;
-    width: 100%;
-    height: 37px;
-     background-size: 100% 37px;
-  }
+      position: absolute;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      top: 0;
+      width: 100%;
+      height: 37px;
+      background-size: 100% 37px;
+    }
   }
 
   &--white-text {
@@ -32,11 +31,10 @@
 
 .features__text-wrapper {
   margin: 0 auto;
-      padding: 0 20px;
+  padding: 0 15px;
   padding-top: 41px;
 
   padding-bottom: 37px;
-
 
   &--additional {
     padding-top: 28px;
@@ -82,15 +80,13 @@
   .features__item {
     display: flex;
 
-    &--triangle {
-      padding-top: 0;
-    }
-
     &--reverse {
       flex-direction: row-reverse;
     }
 
     &--triangle {
+      padding-top: 0;
+
       &::after {
         content: none;
       }
@@ -99,11 +95,15 @@
 
   .features__text-wrapper {
     width: calc(100% / 3);
+    padding-right: 35px;
+    padding-left: 35px;
 
     &--additional {
       padding-top: 40px;
       padding-bottom: 40px;
       min-height: 256px;
+      padding-right: 38px;
+      padding-left: 38px;
 
       &:not(:last-child) {
         border: none;
@@ -140,11 +140,10 @@
     margin-bottom: 58px;
   }
 
-
   .features__text-wrapper {
     padding-top: 51px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 60px;
+    padding-right: 60px;
     margin: 0 auto;
 
     &--additional {

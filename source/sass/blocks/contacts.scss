@@ -77,6 +77,27 @@
     margin-bottom: 19px;
 
     font-size: 21px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+      height: 1px;
+      background-color: $border;
+      margin-right: 60px;
+    }
+
+    &::after {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+
+      height: 1px;
+      background-color: $border;
+      margin-left: 60px;
+    }
   }
 
   .contacts__item {

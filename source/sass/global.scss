@@ -58,3 +58,11 @@ a {
     max-width: $desktop-container;
   }
 }
+
+.mobile-hidden {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}

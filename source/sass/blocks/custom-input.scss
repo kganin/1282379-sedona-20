@@ -15,14 +15,44 @@
     border-radius: 5px;
   }
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+
   input[type="radio"]:checked + &--radio {
     background-color: $basic-black;
     border: 17px solid $input-bg;
+
+    &:hover {
+      border: 17px solid #e5e5e5;
+    }
+
+    &:focus {
+      border: 17px solid #e5e5e5;
+    }
+
+    &:active {
+      background-color: #a4a4a4;
+      border: 17px solid #d5d5d5;
+    }
   }
 
   input[type="checkbox"]:checked + &--checkbox {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    &:active {
+      background-color: #d5d5d5;
+      background-image: url("../img/icon-tick-active.svg");
+    }
   }
 }
