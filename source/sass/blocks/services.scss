@@ -1,7 +1,7 @@
 .services {
   @include reset-list;
-  padding: 20px;
-  margin-bottom: 15px;
+  padding: 24px 20px;
+  margin-bottom: 10px;
 }
 
 .services__item {
@@ -69,7 +69,7 @@
 
   .services__title {
     font-size: 21px;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 
   .services__item {
@@ -81,11 +81,11 @@
 
     &:not(:last-child) {
       // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов
-      margin-bottom: 64px;
+      margin-bottom: 60px;
     }
 
     &:last-child {
-      margin-bottom: 64px;
+      margin-bottom: 60px;
     }
 
     &::before {
@@ -118,18 +118,23 @@
 }
 
 @media (min-width: $laptop) {
+
+  .services__title {
+    margin-bottom: 21px;
+  }
+
   .services__item {
-    padding-top: 162px;
+    padding-top: 160px;
     padding-right: 50px;
     padding-left: 50px;
 
     &:not(:last-child) {
       // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов
-      margin-bottom: 81px;
+      margin-bottom: 80px;
     }
 
     &:last-child {
-      margin-bottom: 81px;
+      margin-bottom: 80px;
     }
   }
 }

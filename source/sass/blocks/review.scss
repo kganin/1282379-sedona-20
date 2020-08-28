@@ -16,14 +16,13 @@
 }
 
 .review__item {
-  position: relative;
-
   &:not(:last-child) {
     margin-bottom: 42px;
   }
 }
 
 .review__caption {
+  position: relative;
   padding-left: 77px;
   margin-bottom: 10px;
   font-weight: bold;

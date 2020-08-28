@@ -121,7 +121,7 @@
     flex-basis: 20%;
 
     &:nth-child(4n + 3) {
-      margin-left: auto; // как сделать перпеолняемость контента в хедера на планшете и десктопе
+      margin-left: auto;
     }
 
     &:not(:last-child)::after {

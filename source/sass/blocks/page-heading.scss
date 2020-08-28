@@ -1,21 +1,21 @@
 .page-heading {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   &--border {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
 
     border-bottom: 1px solid $border;
   }
 
   &--inner {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 }
 
 .page-heading__image-wrapper {
   position: relative;
   height: 390px;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
   padding-top: 90px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");

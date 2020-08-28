@@ -16,7 +16,7 @@
 
 @media (min-width: $tablet) {
   .map {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   .map__yandex-js {
@@ -32,6 +32,7 @@
 @media (min-width: $laptop) {
   .map {
     padding: 0 40px;
+    margin-bottom: 40px;
   }
 
   .map__yandex-js {

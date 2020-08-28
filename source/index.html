@@ -6,6 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/mockup/m-index.png");
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("img/mockup/t-index.png");
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 960px) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("img/mockup/d-index.png");
+    }
+  }
+
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -42,7 +71,7 @@
       <div class="features__item features__item--triangle features__item--white-text">
         <div class="features__text-wrapper">
           <h3 class="features__title">Настоящий <br class="mobile-hidden"> городок</h3>
-          <span class="features__number">- №1 -</span>
+          <span class="features__number">&mdash; №1 &mdash;</span>
           <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="features__image-wrapper">
@@ -70,7 +99,7 @@
       <div class="features__item features__item--reverse features__item--white-text">
         <div class="features__text-wrapper">
           <h3 class="features__title">Там есть <br class="mobile-hidden"> Мост&nbsp;дьявола</h3>
-          <span class="features__number">- №2 -</span>
+          <span class="features__number">&mdash; №2 &mdash;</span>
           <p class="features__text">Да, по нему можно пройти если Вы осмелитесь, конечно</p>
         </div>
         <div class="features__image-wrapper">
@@ -84,17 +113,17 @@
       <ul class="features__features-group">
         <li class="features__text-wrapper features__text-wrapper--additional">
           <h3 class="features__title">Небольшая <br class="mobile-hidden"> площадь</h3>
-          <span class="features__number">- №3 -</span>
+          <span class="features__number">&mdash; №3 &mdash;</span>
           <p class="features__text">Все интересные места находятся очень близко</p>
         </li>
         <li class="features__text-wrapper features__text-wrapper--additional">
           <h3 class="features__title">Красивая <br class="mobile-hidden"> дорога</h3>
-          <span class="features__number">- №4 -</span>
+          <span class="features__number">&mdash; №4 &mdash;</span>
           <p class="features__text">Ехать в Седону из Лас-&nbsp;вегаса совсем не&nbsp;скучно!</p>
         </li>
         <li class="features__text-wrapper features__text-wrapper--additional">
           <h3 class="features__title">Мало <br class="mobile-hidden"> туристов</h3>
-          <span class="features__number">- №5</span>
+          <span class="features__number">&mdash; №5 &mdash;</span>
           <p class="features__text">Большинство едет в Гранд-каньон и толпится там</p>
         </li>
       </ul>
