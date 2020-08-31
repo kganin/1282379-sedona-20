@@ -31,8 +31,8 @@
 @media (min-width: $tablet) {
   .user-id {
     padding: 0;
-   width: 41%;
-   max-width: 400px;
+    width: 41%;
+    max-width: 400px;
     margin-bottom: 0;
 
     &--border {
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: $laptop) {
-   .user-id {
-  width: 42%;
-    }
+  .user-id {
+    width: 42%;
+  }
 }

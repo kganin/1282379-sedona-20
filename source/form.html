@@ -6,21 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
-
   <!-- Pixel Glass -->
   <style>
-  HTML {
+    HTML {
     background-repeat: no-repeat;
     background-position: 50% 0;
     /* Mobile layout by default */
-    background-image: url("img/mockup/m-feedback.png");
+    background-image: url("img/mockup/m-feedback-s.jpg");
   }
 
   /* Tablet */
   @media (min-width: 768px) {
     HTML {
       /* Tablet layout */
-      background-image: url("img/mockup/t-feedback.png");
+      background-image: url("img/mockup/t-feedback-s.jpg");
     }
   }
 
@@ -28,7 +27,7 @@
   @media (min-width: 960px) {
     HTML {
       /* Desktop layout */
-      background-image: url("img/mockup/d-feedback.png");
+      background-image: url("img/mockup/d-feedback-s.png");
     }
   }
 
@@ -38,7 +37,7 @@
   <!-- // Pixel Glass -->
 </head>
 
-<body>
+<body class="page-wrapper">
   <header class="header container">
     <a class="header__logo" href="index.html">
       <picture>
@@ -69,7 +68,7 @@
     </header>
     <form class="form container" action="https://echo.htmlacademy.ru/courses" method="post">
       <div class="form__user-id user-id--border user-id">
-        <h3 class="user-id__title">Представьтесь</h3>
+        <h3 class="user-id__title">Представьтесь:</h3>
         <div class="user-id__item">
           <label class="user-id__caption" for="name">Имя<sup>*</sup>:</label>
           <input class="text-input" id="name" type="text" name="name" placeholder="Петр">
@@ -181,7 +180,21 @@
         </a>
       </p>
     </div>
-  </footer>
+<!--   </footer>
+  <div class="form__popup-group">
+    <div class="popup popup--success">
+      <p class="popup__title">Ваш отзыв отправлен!</p>
+      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.  В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup__button-wrapper">
+        <button class="button popup__close" type="button">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="popup popup--failed">
+      <p class="popup__title">Что-то пошло не так!</p>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button popup__close" type="button">Ок</button>
+    </div>
+  </div> -->
 </body>
 
 </html>

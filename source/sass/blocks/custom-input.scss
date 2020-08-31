@@ -57,14 +57,12 @@
   }
 }
 
+@media (min-width: $laptop) {
+  .custom-input {
+    margin-left: -72px;
 
-@media (min-width: $laptop){
-.custom-input {
-   margin-left: -72px;
-
-  &--checkbox {
-    margin-left: -77px;
+    &--checkbox {
+      margin-left: -77px;
+    }
   }
 }
-}
-

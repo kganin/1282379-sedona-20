@@ -27,6 +27,21 @@
   position: relative;
 }
 
+.video__preview {
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 425px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet) {
   .video {
     padding: 0 60px;
@@ -45,16 +60,31 @@
 
   .video__preview {
     height: 500px;
+    max-width: 1024px;
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $laptop) {
   .video {
-    padding: 0 240px; // хз вот как понять че лучше? такие большие паддинги или просто ширину в процентах для .video дать
+    padding: 0 200px; // хз вот как понять че лучше? такие большие паддинги или просто ширину в процентах для .video дать
     margin-bottom: 122px;
   }
 
   .video__text-wrapper {
     margin-bottom: 77px;
+  }
+
+  .video__preview {
+    max-width: 1200px;
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Pixel Glass -->
   <style>
-  HTML {
+    HTML {
     background-repeat: no-repeat;
     background-position: 50% 0;
     /* Mobile layout by default */
@@ -35,10 +35,9 @@
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script src="../node_modules/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
-
 </head>
 
-<body>
+<body class="page-wrapper">
   <header class="header container">
     <a class="header__logo" href="index.html">
       <picture>
@@ -165,13 +164,16 @@
       </div>
       <article class="video__content">
         <h3 class="hidden">Видео-презентация</h3>
-        <a href="" class="photo__link">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
-          </picture>
-        </a>
+        <!-- <picture>
+  <source media="(min-width: 1024px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+  <vid class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
+</picture> -->
+        <video class="video__preview" width="320" height="201" preload="none">
+          <source src="video.mp4" type="video/mp4">
+          <source src="video.webm" type="video/webm">
+          <source src="video.ogg" type="video/ogg">
+        </video>
         <div class="video__control-panel control-panel">
           <button class="control-panel__button control-panel__button--replay" type="button"><span class="hidden">Повторить заного</span></button>
           <div class="control-panel__progress-bar-wrapper">
