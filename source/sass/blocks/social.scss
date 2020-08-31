@@ -20,32 +20,33 @@
 }
 
 .social__link {
-  display: inline-block;
   width: 46px;
   height: 48px;
-
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: $main-color;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+  &:hover {
+    background-color: #669ec0;
   }
 
-  &--facebook {
-    background-image: url("../img/icon-youtube.svg");
+  &:focus {
+    background-color: #669ec0;
   }
 
-  &--youtube {
-    background-image: url("../img/icon-facebook.svg");
+  &:active {
+    background-color: #5496bd;
 
-    &:active {
-      background-color: #5496bd;
+    & .social__icon {
       opacity: 0.3;
     }
   }
+}
+
+.social__icon {
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet) {
