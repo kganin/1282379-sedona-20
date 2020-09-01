@@ -80,15 +80,15 @@
     cursor: default;
   }
 
-  &:hover {
+  &:not(&--active):hover {
     background-color: #669ec0;
   }
 
-  &:focus {
+  &:not(&--active):focus {
     background-color: #669ec0;
   }
 
-  &:active {
+  &:not(&--active):active {
     background-color: #5496bd;
     color: rgba($extra-text, 0.3);
   }
@@ -139,27 +139,14 @@
 
     &--active {
       color: #766357;
-
-      &:active {
-        color: #766357;
-        opacity: 0.3;
-      }
-
-      &:hover {
-        color: #604e43;
-      }
-
-      &:focus {
-        color: #604e43;
-      }
     }
 
-    &:hover {
+    &:not(&--active):hover {
       background-color: transparent;
       color: #81b3d2;
     }
 
-    &:focus {
+    &:not(&--active):focus {
       background-color: transparent;
       color: #81b3d2;
     }

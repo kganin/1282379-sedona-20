@@ -141,7 +141,7 @@
           <source src="video.ogg" type="video/ogg">
         </video>
         <div class="video__control-panel control-panel">
-          <button class="control-panel__button control-panel__button--replay" type="button"><svg class="control-panel__icon" width="20" height="20">
+          <button class="control-panel__button control-panel__button--replay" type="button" aria-label="Повторить ролик"><svg class="control-panel__icon" width="20" height="20" aria-hidden="true">
               <use xlink:href="img/icons/sprite.svg#video-replay"></use>
             </svg></button>
           <div class="control-panel__progress-bar-wrapper">
@@ -149,10 +149,10 @@
             </div>
             <button class="control-panel__toggle" type="button" aria-label="Ползунок видео"></button>
           </div>
-          <button class="control-panel__button control-panel__button--subtitles" type="button"><svg class="control-panel__icon" width="32" height="20">
+          <button class="control-panel__button control-panel__button--subtitles" type="button" aria-label="Включить субтитры"><svg class="control-panel__icon" width="32" height="20" aria-hidden="true">
               <use xlink:href="img/icons/sprite.svg#video-subtitles"></use>
             </svg></button>
-          <button class="control-panel__button control-panel__button--fullscreen" type="button"><svg class="control-panel__icon" width="20" height="20">
+          <button class="control-panel__button control-panel__button--fullscreen" type="button" aria-label="Развернуть на весь экран"><svg class="control-panel__icon" width="20" height="20" aria-hidden="true">
               <use xlink:href="img/icons/sprite.svg#video-fullscreen"></use>
             </svg></button>
         </div>
@@ -163,20 +163,20 @@
     <div class="footer__wrapper">
       <a class="footer__hashtag" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
       <ul class="social">
-        <li class="social__item"><a href="" class="social__link social__link--twitter">
-            <svg class="social__icon" width="18" height="15">
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Твиттере">
+            <svg class="social__icon" width="18" height="15" role="img">
               <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item"><a href="" class="social__link social__link--youtube">
-            <svg class="social__icon" width="9" height="19">
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Фэйсбуке">
+            <svg class="social__icon" width="9" height="19" role="img">
               <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item"><a href="" class="social__link social__link--facebook">
-            <svg class="social__icon" width="20" height="14">
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы на Ютуб">
+            <svg class="social__icon" width="20" height="14" role="img">
               <use xlink:href="img/icons/sprite.svg#youtube-icon"></use>
             </svg>
           </a>
@@ -184,8 +184,10 @@
       </ul>
       <p class="footer__copyright">
         Разработано
-        <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+        <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано в HTML Academy">
+          <svg width="27" height="34" role="img">
+            <use xlink:href="img/icons/sprite.svg#htmlacademy-logo"></use>
+          </svg>
         </a>
       </p>
     </div>

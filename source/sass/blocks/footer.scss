@@ -39,19 +39,22 @@
   .footer__partner-logo {
     margin-left: 12px;
 
-    &:hover {
-      filter: invert(72%) sepia(13%) saturate(922%) hue-rotate(159deg) brightness(92%) contrast(94%);
-    }
+    & svg {
+      &:hover {
+        fill: $main-color;
+      }
 
-    &:focus {
-      filter: invert(72%) sepia(13%) saturate(922%) hue-rotate(159deg) brightness(92%) contrast(94%);
-    }
+      &:focus {
+        fill: $main-color;
+      }
 
-    &:active {
-      filter: invert(71%) sepia(14%) saturate(0%) hue-rotate(203deg) brightness(98%) contrast(95%);
+      &:active {
+        fill: #b2b2b2;
+      }
     }
   }
 }
+
 
 @media (min-width: $tablet) {
   .footer__wrapper {
