@@ -1,28 +1,77 @@
 .custom-input {
   position: absolute;
-  bottom: 50%;
+  top: 50%;
 
   width: 55px;
   height: 55px;
   margin-left: -78px;
 
   background-color: $input-bg;
-  border-radius: 50%;
-  transform: translateY(50%);
+  transform: translateY(-54%);
   cursor: pointer;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  input[type="radio"]:hover + &--radio {
+    background-color: #e5e5e5;
+  }
+
+  input[type="radio"]:focus + &--radio {
+    background-color: #e5e5e5;
+    box-shadow: 0 0 0 3px #d5d5d5;
+  }
+
+  input[type="radio"]:active + &--radio {
+    background-color: #d5d5d5;
+  }
+
+  input[type="radio"]:checked + &--radio {
+    background-color: $basic-black;
+    border: 17px solid #e5e5e5;
+
+    &:active {
+      background-color: rgba($basic-black, 0.3);
+      border: 17px solid #d5d5d5;
+    }
+  }
 
   &--checkbox {
     border-radius: 5px;
   }
 
-  input[type="radio"]:checked + &--radio {
-    background-color: $basic-black;
-    border: 17px solid $input-bg;
+  input[type="checkbox"]:hover + &--checkbox {
+    background-color: #e5e5e5;
+  }
+
+  input[type="checkbox"]:focus + &--checkbox {
+    background-color: #e5e5e5;
+    box-shadow: 0 0 0 3px #d5d5d5;
+  }
+
+  input[type="checkbox"]:active + &--checkbox {
+    background-color: #d5d5d5;
   }
 
   input[type="checkbox"]:checked + &--checkbox {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    &:active {
+      background-color: #d5d5d5;
+      background-image: url("../img/icon-tick-active.svg");
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .custom-input {
+    margin-left: -72px;
+
+    &--checkbox {
+      margin-left: -77px;
+    }
   }
 }

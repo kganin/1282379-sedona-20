@@ -20,7 +20,7 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 }
 
@@ -31,7 +31,8 @@
 @media (min-width: $tablet) {
   .user-id {
     padding: 0;
-    flex-basis: 42%;
+    width: 41%;
+    max-width: 400px;
     margin-bottom: 0;
 
     &--border {
@@ -42,6 +43,12 @@
   .user-id__title {
     text-align: left;
     font-size: 21px;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .user-id {
+    width: 42%;
   }
 }

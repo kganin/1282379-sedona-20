@@ -13,4 +13,17 @@
   background-color: $main-color;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba($extra-text, 0.3);
+  }
 }

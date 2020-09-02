@@ -1,6 +1,6 @@
 .feedback {
   padding: 0 20px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 
   &--border {
     border-bottom: 1px solid $border;
@@ -11,7 +11,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   display: block;
 }
 
@@ -19,11 +19,33 @@
   .feedback {
     padding: 0;
     width: 100%;
-    margin-bottom: 49px;
+    margin-bottom: 61px;
   }
 
   .feedback__title {
     font-size: 21px;
     margin-bottom: 53px;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+      height: 1px;
+      background-color: $border;
+      margin-right: 75px;
+    }
+
+    &::after {
+      flex-grow: 1;
+      flex-shrink: 0;
+      content: "";
+
+      height: 1px;
+      background-color: $border;
+      margin-left: 75px;
+    }
   }
 }

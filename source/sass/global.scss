@@ -58,3 +58,20 @@ a {
     max-width: $desktop-container;
   }
 }
+
+.mobile-hidden {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.page-wrapper {
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 25px 0 25px -25px rgba(0, 1, 1, 0.2), -25px 0 25px -25px rgba(0, 1, 1, 0.2);
+  }
+}

@@ -15,24 +15,49 @@
   font-weight: bold;
   font-size: 21px;
   margin-bottom: 32px;
+
+  &:focus {
+    color: $main-color;
+  }
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 .footer__copyright {
   @include reset;
   text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 
   .footer__partner-logo {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: 12px;
+
+    & svg {
+      &:hover {
+        fill: $main-color;
+      }
+
+      &:focus {
+        fill: $main-color;
+      }
+
+      &:active {
+        fill: #b2b2b2;
+      }
+    }
   }
 }
 
+
 @media (min-width: $tablet) {
   .footer__wrapper {
-    display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 60px;
@@ -45,6 +70,6 @@
 
 @media (min-width: $laptop) {
   .footer__wrapper {
-    padding: 0 160px;
+    padding: 0 120px;
   }
 }

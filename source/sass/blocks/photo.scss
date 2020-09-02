@@ -9,7 +9,7 @@
   padding-bottom: 16px;
 
   &:not(:last-child) {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 
   border-bottom: 1px solid $border;
@@ -121,12 +121,13 @@
 
   .photo__like-button {
     margin-right: 5px;
+    filter: invert(75%) sepia(13%) saturate(0%) hue-rotate(197deg) brightness(87%) contrast(83%);
   }
 }
 
 @media (min-width: $laptop) {
   .photo {
-    padding: 0 40px;
+    padding: 0;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); //строки 80 и 132: можно не перписывая все свойство, 50% на 30% поменять?
     margin-bottom: 63px;
   }

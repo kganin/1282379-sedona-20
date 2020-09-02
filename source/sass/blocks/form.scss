@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 78px;
+  margin-bottom: 73px;
 }
 
 .form__submit-wrapper {
@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 96px;
     padding: 0 60px;
   }
 
@@ -47,8 +47,8 @@
 
 @media (min-width: $laptop) {
   .form {
-    padding: 0 160px;
-    margin-bottom: 103px;
+    padding: 0 120px;
+    margin-bottom: 98px;
   }
 
   .form__button {

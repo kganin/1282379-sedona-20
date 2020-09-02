@@ -28,6 +28,11 @@ $tablet-container: 768px;
 $laptop-container: 1024px;
 $desktop-container: 1280px;
 
+// template retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 // fonts
 
 $main-font: "PT Sans", "Arial", sans-serif;

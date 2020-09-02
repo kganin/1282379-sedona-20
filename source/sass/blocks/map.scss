@@ -1,15 +1,45 @@
 .map {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
+}
+
+.map__yandex-js {
+  height: 350px;
+
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-position: center center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px 350px;
+  }
 }
 
 @media (min-width: $tablet) {
   .map {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
+  }
+
+  .map__yandex-js {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 768px 350px;
+    }
   }
 }
 
 @media (min-width: $laptop) {
   .map {
-    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+
+  .map__yandex-js {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px 350px;
+    }
   }
 }
