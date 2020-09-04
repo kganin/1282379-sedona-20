@@ -109,12 +109,12 @@
       <div class="hotel-search__wrapper">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
         <p class="hotel-search__text">Укажите предпологаемые даты поездки,<br class="mobile-hidden"> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <button class="hotel-search__button button" type="button">Найти гостиницу</button>
+        <a class="hotel-search__link button" href="popup.html">Найти гостиницу</a>
       </div>
     </section>
     <article class="map container">
       <h2 class="hidden">Как добраться?</h2>
-      <div class="map__yandex-js"></div>
+      <div class="map__google-js" id="map"></div>
     </article>
   </main>
   <footer class="footer container">
@@ -150,6 +150,12 @@
       </p>
     </div>
   </footer>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsStda2XNqdSd4s0XXhJr7O_MAqvwaOS4&callback=initMap">
+    </script>
+<!--    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1243dd41-e530-4ad7-b248-854e4ea552c9"></script>
+ -->
+  <script type="text/javascript" src="js/map.js"></script>
 </body>
 
 </html>

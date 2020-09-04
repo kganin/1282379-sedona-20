@@ -1,8 +1,9 @@
 .map {
   margin-bottom: 41px;
+  text-transform: none;
 }
 
-.map__yandex-js {
+.map__google-js {
   height: 350px;
 
   background-image: url("../img/bg-map-mobile@1x.jpg");

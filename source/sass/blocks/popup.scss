@@ -1,19 +1,20 @@
 .popup {
+  width: 100%;
+  max-width: 425px;
+  min-width: 320px;
+  padding-top: 47px;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 20;
-  text-align: center;
-  outline: 1px solid black;
-  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15), 0 -1px 10px 0 rgba(0, 1, 1, 0.15);
+  z-index: 40;
+  background-color: $basic-white;
+  display: none;
 
-  &--success {
-    // padding: 33px 100px 49px 100px;
-    background-color: $basic-white;
-  }
-
-  &--failed {
+  &--error {
+    padding-top: 49px;
     display: none;
   }
 }
@@ -21,21 +22,104 @@
 .popup__title {
   @include reset;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
 
-  font-size: 30px;
-  line-height: 40px;
+  width: 75%;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
 .popup__text {
   @include reset;
-  width: 100%;
-  max-width: 420px;
+
+  width: 75%;
   line-height: 24px;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  &--error {
+    margin-bottom: 23px;
+  }
+}
+
+.popup__button {
+  margin-bottom: 20px;
+  font-size: 18px;
+  width: 100%;
+
+  &--error {
+    margin-bottom: 35px;
+  }
 }
 
 .popup__button-wrapper {
   background-color: #f2f2f2;
-  padding-top: 45px;
+
+  padding: 0 20px;
+  padding-top: 20px;
+
+  &--error {
+    background-color: $basic-white;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .popup {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 61px;
+    text-transform: uppercase;
+
+    &--error {
+      max-width: 400px;
+      padding-top: 59px;
+    }
+  }
+
+  .popup__title {
+    @include reset;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+
+    &--error {
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .popup__text {
+    @include reset;
+
+    width: 75%;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &--error {
+      margin-bottom: 36px;
+    }
+  }
+
+  .popup__button {
+    margin-bottom: 40px;
+    font-size: 21px;
+    padding: 16px 75px;
+
+    &--error {
+      margin-bottom: 50px;
+    }
+  }
+
+  .popup__button-wrapper {
+    padding: 0 90px;
+
+    padding-top: 45px;
+
+    &--error {
+      padding: 0 65px;
+    }
+  }
 }
