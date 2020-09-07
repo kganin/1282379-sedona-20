@@ -22,21 +22,52 @@
   position: absolute;
   top: 17px;
   right: 20px;
-
   width: 22px;
   height: 22px;
 
   background-color: transparent;
-  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: top center;
   border: none;
   cursor: pointer;
+  z-index: 20;
+
+  .header__nav-list--opened + & {
+    background-image: url("../img/icon-cross.svg");
+  }
+
+  .header__nav-list--closed + & {
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  .header__nav-list--no-js + & {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__nav-list {
   @include reset-list;
   width: 100%;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--no-js {
+    display: block;
+  }
 }
 
 .header__nav-item {

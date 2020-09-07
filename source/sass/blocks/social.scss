@@ -28,6 +28,10 @@
 
   background-color: $main-color;
 
+  & svg {
+    fill: #ffffff;
+  }
+
   &:hover {
     background-color: #669ec0;
   }
@@ -43,10 +47,6 @@
       opacity: 0.3;
     }
   }
-}
-
-.social__icon {
-  fill: #ffffff;
 }
 
 @media (min-width: $tablet) {

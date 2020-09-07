@@ -80,7 +80,6 @@
     text-align: center;
 
     &:not(:last-child) {
-      // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов
       margin-bottom: 60px;
     }
 
@@ -128,7 +127,6 @@
     padding-left: 50px;
 
     &:not(:last-child) {
-      // строки 90-96: это можно как нить оптимизировать? тип просто margin 64px для всех элементов
       margin-bottom: 80px;
     }
 
