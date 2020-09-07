@@ -14,10 +14,8 @@ const pipeline = require("readable-stream").pipeline;
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const imagemin = require("gulp-imagemin");
-const posthtml = require("gulp-posthtml");
 const htmlmin = require("gulp-htmlmin");
-
-
+const concat = require("gulp-concat");
 
 // Styles
 
@@ -60,6 +58,7 @@ exports.html = html;
 const compress = () => {
   return pipeline(
     gulp.src("source/js/**/*.js"),
+    concat('script.js'),
     sourcemap.init(),
     uglify(),
     rename("script.min.js"),
@@ -104,7 +103,11 @@ const images = () => {
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
         imagemin.mozjpeg({ progressive: true }),
-        imagemin.svgo()
+        imagemin.svgo({
+          plugins: [
+            { cleanupNumericValues: { floatPrecision: 1 } }
+          ]
+        })
       ])
     )
     .pipe(gulp.dest("build/img"));
@@ -146,7 +149,7 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp
     .src(["source/fonts/**/*.{woff,woff2}",
-          "source/*.ico"
+      "source/*.ico"
     ], {
       base: "source"
     })

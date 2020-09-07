@@ -22,7 +22,6 @@
   position: absolute;
   top: 17px;
   right: 20px;
-  background-image: url("../img/icon-cross.svg");
   width: 22px;
   height: 22px;
 
@@ -33,12 +32,16 @@
   cursor: pointer;
   z-index: 20;
 
-  &--no-js {
-    display: none;
+  .header__nav-list--opened + & {
+    background-image: url("../img/icon-cross.svg");
   }
 
-  &--closed {
+  .header__nav-list--closed + & {
     background-image: url("../img/icon-menu.svg");
+  }
+
+    .header__nav-list--no-js + & {
+    display: none;
   }
 
   &:hover {
@@ -54,12 +57,17 @@
   @include reset-list;
   width: 100%;
 
+
   &--opened {
     display: block;
   }
 
   &--closed {
     display: none;
+  }
+
+   &--no-js {
+    display: block;
   }
 }
 

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Форма отзыва</title>
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="js/script.min.js" as="script">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,13 +22,13 @@
       </picture>
     </a>
     <nav class="header__nav">
-      <button class="header__toggle" type="button"></button>
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="index.html" class="header__nav-link">Главная</a></li>
+      <ul class="header__nav-list header__nav-list--closed header__nav-list--no-js">
+        <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
         <li class="header__nav-item"><a href="photo.html" class="header__nav-link">Фото и видео</a></li>
         <li class="header__nav-item"><a class="header__nav-link header__nav-link--active">Форма отзыва</a></li>
         <li class="header__nav-item header__nav-item--shadow"><a href="https://htmlacademy.ru/intensive/adaptive" class="header__nav-link">HTML Academy</a></li>
       </ul>
+      <button class="header__toggle" type="button"><span class="hidden">открыть/закрыть меню навигации</span></button>
     </nav>
   </header>
   <main>
@@ -171,19 +173,19 @@
       </p>
     </div>
   </footer>
-<div class="popup">
-  <p class="popup__title">Ваш отзыв отправлен!</p>
-  <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-  <div class="popup__button-wrapper">
-    <button class="button popup__button" type="button">Закрыть окно</button>
+  <div class="popup">
+    <p class="popup__title">Ваш отзыв отправлен!</p>
+    <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="popup__button-wrapper">
+      <button class="button popup__button" type="button">Закрыть окно</button>
+    </div>
   </div>
-</div>
-<div class="popup popup--error">
-  <p class="popup__title popup__title--error">Что-то пошло не&nbsp;так!</p>
-  <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
-  <div class="popup__button-wrapper popup__button-wrapper--error"><button class="button popup__button popup__button--error" type="button">Ок</button></div>
-</div>
+  <div class="popup popup--error">
+    <p class="popup__title popup__title--error">Что-то пошло не&nbsp;так!</p>
+    <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
+    <div class="popup__button-wrapper popup__button-wrapper--error"><button class="button popup__button popup__button--error" type="button">Ок</button></div>
+  </div>
+  <script type="text/javascript" src="js/script.min.js"></script>
 </body>
-
 
 </html>

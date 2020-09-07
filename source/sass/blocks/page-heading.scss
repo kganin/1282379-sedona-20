@@ -14,7 +14,7 @@
 
 .page-heading__image-wrapper {
   position: relative;
-  height: 390px;
+  height: 389px;
   margin-bottom: 34px;
   padding-top: 90px;
 
@@ -46,9 +46,9 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     height: 80px;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
-    background-size: 100% auto;
+    background-size: 101% auto;
   }
 }
 
