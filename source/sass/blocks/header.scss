@@ -40,7 +40,7 @@
     background-image: url("../img/icon-menu.svg");
   }
 
-    .header__nav-list--no-js + & {
+  .header__nav-list--no-js + & {
     display: none;
   }
 
@@ -57,7 +57,6 @@
   @include reset-list;
   width: 100%;
 
-
   &--opened {
     display: block;
   }
@@ -66,7 +65,7 @@
     display: none;
   }
 
-   &--no-js {
+  &--no-js {
     display: block;
   }
 }
