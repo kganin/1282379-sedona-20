@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Фотогалерея</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-wrapper">
@@ -44,9 +46,9 @@
         <figure class="photo__item-box">
           <a href="" class="photo__link">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/webp/photo-sunset-desktop@1x.webp 1x, img/webp/photo-sunset-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/photo-sunset-tablet@1x.webp 1x, img/webp/photo-sunset-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/photo-sunset-mobile@1x.webp 1x, img/webp/photo-sunset-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
               <img class="photo__image photo__image--large" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
@@ -69,9 +71,9 @@
         <figure class="photo__item-box">
           <a href="" class="photo__link">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/webp/photo-cactus-desktop@1x.webp 1x, img/webp/photo-cactus-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/photo-cactus-table@1x.webp 1x, img/webp/photo-cactus-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/photo-cactus-mobile@1x.webp 1x, img/webp/photo-cactus-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-table@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
@@ -94,9 +96,9 @@
         <figure class="photo__item-box">
           <a href="" class="photo__link">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/webp/photo-roads-desktop@1x.webp 1x, img/webp/photo-roads-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/photo-roads-tablet@1x.webp 1x, img/webp/photo-roads-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/photo-roads-mobile@1x.webp 1x, img/webp/photo-roads-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
@@ -119,9 +121,9 @@
         <figure class="photo__item-box">
           <a href="" class="photo__link">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/webp/photo-bridge-desktop@1x.webp 1x, img/webp/photo-bridge-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/photo-bridge-tablet@1x.webp 1x, img/webp/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/photo-bridge-mobile@1x.webp 1x, img/webp/photo-bridge-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
@@ -154,7 +156,7 @@
         </video>
         <div class="video__control-panel control-panel">
           <button class="control-panel__button control-panel__button--replay" type="button" aria-label="Повторить ролик"><svg class="control-panel__icon" width="20" height="20" aria-hidden="true">
-              <use xlink:href="img/icons/sprite.svg#video-replay"></use>
+              <use xlink:href="img/icons/sprite.svg#icon-video-replay"></use>
             </svg></button>
           <div class="control-panel__progress-bar-wrapper">
             <div class="control-panel__progress-bar">
@@ -162,10 +164,10 @@
             <button class="control-panel__toggle" type="button" aria-label="Ползунок видео"></button>
           </div>
           <button class="control-panel__button control-panel__button--subtitles" type="button" aria-label="Включить субтитры"><svg class="control-panel__icon" width="32" height="20" aria-hidden="true">
-              <use xlink:href="img/icons/sprite.svg#video-subtitles"></use>
+              <use xlink:href="img/icons/sprite.svg#icon-video-subtitles"></use>
             </svg></button>
           <button class="control-panel__button control-panel__button--fullscreen" type="button" aria-label="Развернуть на весь экран"><svg class="control-panel__icon" width="20" height="20" aria-hidden="true">
-              <use xlink:href="img/icons/sprite.svg#video-fullscreen"></use>
+              <use xlink:href="img/icons/sprite.svg#icon-video-fullscreen"></use>
             </svg></button>
         </div>
       </article>
@@ -175,30 +177,30 @@
     <div class="footer__wrapper">
       <a class="footer__hashtag" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
       <ul class="social">
-        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Твиттере">
-            <svg width="18" height="15" role="img">
-              <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Твиттере" target="_blank">
+            <svg width="18" height="15" aria-hidden="true">
+              <use xlink:href="img/icons/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Фэйсбуке">
-            <svg width="9" height="19" role="img">
-              <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Фэйсбуке" target="_blank">
+            <svg width="9" height="19" aria-hidden="true">
+              <use xlink:href="img/icons/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item"><a href="" class="social__link" aria-label="Мы на Ютуб">
-            <svg width="20" height="14" role="img">
-              <use xlink:href="img/icons/sprite.svg#youtube-icon"></use>
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы на Ютуб" target="_blank">
+            <svg width="20" height="14" aria-hidden="true">
+              <use xlink:href="img/icons/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
       <p class="footer__copyright">
         Разработано
-        <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано в HTML Academy">
-          <svg width="27" height="34" role="img">
-            <use xlink:href="img/icons/sprite.svg#htmlacademy-logo"></use>
+        <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34" role="img" aria-label="Разработано в HTML Academy">
+            <use xlink:href="img/icons/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </p>

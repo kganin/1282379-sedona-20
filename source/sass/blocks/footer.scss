@@ -35,26 +35,25 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
 
-  .footer__partner-logo {
-    margin-left: 12px;
+.footer__partner-logo {
+  margin-left: 12px;
 
-    & svg {
-      &:hover {
-        fill: $main-color;
-      }
+  & svg {
+    &:hover {
+      fill: $main-color;
+    }
 
-      &:focus {
-        fill: $main-color;
-      }
+    &:focus {
+      fill: $main-color;
+    }
 
-      &:active {
-        fill: #b2b2b2;
-      }
+    &:active {
+      fill: #b2b2b2;
     }
   }
 }
-
 
 @media (min-width: $tablet) {
   .footer__wrapper {

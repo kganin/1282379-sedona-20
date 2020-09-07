@@ -22,21 +22,45 @@
   position: absolute;
   top: 17px;
   right: 20px;
-
+  background-image: url("../img/icon-cross.svg");
   width: 22px;
   height: 22px;
 
   background-color: transparent;
-  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: top center;
   border: none;
   cursor: pointer;
+  z-index: 20;
+
+  &--no-js {
+    display: none;
+  }
+
+  &--closed {
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__nav-list {
   @include reset-list;
   width: 100%;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .header__nav-item {

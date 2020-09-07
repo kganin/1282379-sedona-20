@@ -1,40 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - Форма отзыва</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    /* Mobile layout by default */
-    background-image: url("img/mockup/m-feedback.png");
-  }
-
-  /* Tablet */
-  @media (min-width: 768px) {
-    HTML {
-      /* Tablet layout */
-      background-image: url("img/mockup/t-feedback.png");
-    }
-  }
-
-  /* Desktop */
-  @media (min-width: 960px) {
-    HTML {
-      /* Desktop layout */
-      background-image: url("img/mockup/d-feedback.png");
-    }
-  }
-
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-wrapper">
@@ -71,11 +44,11 @@
         <h3 class="user-id__title">Представьтесь:</h3>
         <div class="user-id__item">
           <label class="user-id__caption" for="name">Имя<sup>*</sup>:</label>
-          <input class="text-input" id="name" type="text" name="name" placeholder="Петр">
+          <input class="text-input" id="name" type="text" name="name" placeholder="Петр" required>
         </div>
         <div class="user-id__item">
           <label class="user-id__caption" for="surname">Фамилия<sup>*</sup>:</label>
-          <input id="surname" class="text-input" type="text" name="surname" placeholder="Иванов">
+          <input id="surname" class="text-input" type="text" name="surname" placeholder="Иванов" required>
         </div>
         <div class="user-id__item">
           <label class="user-id__caption" for="middle-name">Отчество:</label>
@@ -87,12 +60,12 @@
         <div class="contacts__item">
           <label class="contacts__caption" for="phone-number"><span class="hidden-mob">Контактный</span>
             телефон<sup>*</sup>:</label>
-          <input class="text-input text-input--contacts" id="phone-number" type="text" name="phone-number" placeholder="Введите телефон">
+          <input class="text-input text-input--contacts" id="phone-number" type="tel" name="phone-number" placeholder="Введите телефон" required>
           <span class="contacts__icon contacts__icon--phone"></span>
         </div>
         <div class="contacts__item">
           <label class="contacts__caption" for="email">Электронная почта<sup>*</sup>:</label>
-          <input class="text-input text-input--contacts" id="email" type="text" name="email" placeholder="Введите e-mail">
+          <input class="text-input text-input--contacts" id="email" type="email" name="email" placeholder="Введите e-mail" required>
           <span class="contacts__icon contacts__icon--mail"></span>
         </div>
       </div>
@@ -169,47 +142,48 @@
     <div class="footer__wrapper">
       <a class="footer__hashtag" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
       <ul class="social">
-        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Твиттере">
-            <svg width="18" height="15" role="img">
-              <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Твиттере" target="_blank">
+            <svg width="18" height="15" aria-hidden="true">
+              <use xlink:href="img/icons/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Фэйсбуке">
-            <svg width="9" height="19" role="img">
-              <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы в Фэйсбуке" target="_blank">
+            <svg width="9" height="19" aria-hidden="true">
+              <use xlink:href="img/icons/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item"><a href="" class="social__link" aria-label="Мы на Ютуб">
-            <svg width="20" height="14" role="img">
-              <use xlink:href="img/icons/sprite.svg#youtube-icon"></use>
+        <li class="social__item"><a href="" class="social__link" aria-label="Мы на Ютуб" target="_blank">
+            <svg width="20" height="14" aria-hidden="true">
+              <use xlink:href="img/icons/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
       <p class="footer__copyright">
         Разработано
-        <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано в HTML Academy">
-          <svg width="27" height="34" role="img">
-            <use xlink:href="img/icons/sprite.svg#htmlacademy-logo"></use>
+        <a class="footer__partner-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34" role="img" aria-label="Разработано в HTML Academy">
+            <use xlink:href="img/icons/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
     </div>
   </footer>
-  <div class="popup">
-    <p class="popup__title">Ваш отзыв отправлен!</p>
-    <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
-    <div class="popup__button-wrapper">
-      <button class="button popup__button" type="button">Закрыть окно</button>
-    </div>
+<div class="popup">
+  <p class="popup__title">Ваш отзыв отправлен!</p>
+  <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  <div class="popup__button-wrapper">
+    <button class="button popup__button" type="button">Закрыть окно</button>
   </div>
-  <div class="popup popup--error">
-    <p class="popup__title popup__title--error">Что-то пошло не&nbsp;так!</p>
-    <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
-    <div class="popup__button-wrapper popup__button-wrapper--error"><button class="button popup__button popup__button--error" type="button">Ок</button></div>
-  </div>
+</div>
+<div class="popup popup--error">
+  <p class="popup__title popup__title--error">Что-то пошло не&nbsp;так!</p>
+  <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
+  <div class="popup__button-wrapper popup__button-wrapper--error"><button class="button popup__button popup__button--error" type="button">Ок</button></div>
+</div>
 </body>
+
 
 </html>

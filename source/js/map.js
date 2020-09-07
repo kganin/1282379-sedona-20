@@ -1,22 +1,3 @@
-// function init() {
-//   var myMap = new ymaps.Map("map", {
-//     center: [34.869497, -111.760186],
-//     zoom: 8,
-//     controls: ["zoomControl"]
-//   });
-//   myPlacemark = new ymaps.Placemark([34.8544438,-111.8301579], {
-//     hintContent: "Седона - Рай для туристов!",
-//     }, {
-//     iconLayout: "default#image",
-//     iconImageHref: "../img/icon-map-marker.svg",
-//     iconImageSize: [27, 27],
-//     iconImageOffset: [0, -15]
-//   }), myMap.behaviors.disable("scrollZoom"), myMap.geoObjects.add(myPlacemark)
-// }
-// ymaps.ready(init);
-
-
-
 let map;
 
 function initMap() {
