@@ -58,7 +58,7 @@ exports.html = html;
 const compress = () => {
   return pipeline(
     gulp.src("source/js/**/*.js"),
-    concat('script.js'),
+    concat("script.js"),
     sourcemap.init(),
     uglify(),
     rename("script.min.js"),
